@@ -1,0 +1,20 @@
+.solve {
+    background-image: url("../img/Desktop\ -\ 2.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 100% 10%;
+}
+
+.desk{
+    background-image: url("../img/Vector\ 3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+footer{
+    background-image: url("../img/Desktop\ -\ 7.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}

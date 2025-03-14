@@ -1,0 +1,9 @@
+.solve {
+    background: linear-gradient(180deg, #FFF 0%, #E1F4FF 100%);
+}
+
+.bottom {
+    background-image:url("../img/iproc-2-go/Desktop\ -\ 10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
