@@ -1,9 +1,42 @@
-.solve {
+.hero {
+    background-image: url("../img/background-hero.png");
+    background-size: contain;
+    background-position: top center;
+}
+
+.illustration::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 97%;
+    z-index: 10;
+    left: 42%;
+    transform: skewX(45deg);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+.problem {
     background: linear-gradient(180deg, #FFF 0%, #E1F4FF 100%);
 }
 
-.bottom {
-    background-image:url("../img/iproc-2-go/Desktop\ -\ 10.png");
+.solve {
+    background: linear-gradient(0deg, #FFF 0%, #E1F4FF 100%);
+}
+
+.bottom>div {
+    background-image: url("../img/iproc-2-go/background-bottom.png");
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-color: #005db5;
+    background-position: bottom;
+}
+
+footer {
+    background-image: url("../img/background-hero.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
