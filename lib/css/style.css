@@ -1,7 +1,7 @@
 .hero {
-    background-image: url("../img/background.png");
+    background-image: url("../img/background-hero.png");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -9,44 +9,12 @@ iframe {
     aspect-ratio: 16 / 9;
 }
 
-.client1 {
-    background: linear-gradient(#ffffffde, #ffffffde), url(../IMG/bumnd.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.client2 {
-    background: linear-gradient(#ffffffde, #ffffffde), url(../img/mining.min.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.client3 {
-    background: linear-gradient(#ffffffde, #ffffffde), url(../img/finance.min.png);
-    background-position: center;
-    background-size: cover;
-}
-
-.client4 {
-    background: linear-gradient(#ffffffde, #ffffffde), url(../img/manufaktur.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.client5 {
-    background: linear-gradient(#ffffffde, #ffffffde), url(../img/pemerintah.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.client6 {
-    background: linear-gradient(#ffffffde, #ffffffde), url(../img/telecommunication.min.jpg);
-    background-position: center;
-    background-size: cover;
+.slide-iproc {
+    background-color: #005DB5;
 }
 
 .prev,
-.next {
+.next{
     padding: 5px;
     width: 40px;
     height: 40px;
@@ -56,10 +24,23 @@ iframe {
     background-color: #005DB5;
     color: white;
     border-radius: 20px;
-    position: absolute;
     border: 3px solid #005db5;
     z-index: 1;
-    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+.award-prev,
+.award-next {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    background-color: #00000080;
+    color: white;
+    border-radius: 9999px;
+    z-index: 1;
     /* transform: translateY(-50%); */
 }
 
@@ -80,11 +61,11 @@ iframe {
 }
 
 .count-up {
-    background: linear-gradient(to bottom, #005DB5, #005eb59f, #C1E8FF, rgba(255, 255, 255, 0));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(72, 172, 225, 0.20) 100%), #FFF;
 }
 
 .procurement {
-    background: linear-gradient(to top, #c1e8ff00, #C1E8FF);
+    background: linear-gradient(to bottom, #c1e8ff00, #C1E8FF);
 }
 
 .testimonial {
@@ -93,20 +74,16 @@ iframe {
     background-size: cover;
 }
 
-.iproc-feature-2 {
-    background-image: url("../img/pattern iproc go.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .sector {
     background-image: url("../img/Sector.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.pro-transform{
-    background-image: url("../img/pattern1.svg");
+.bottom>div {
+    background-image: url("../img/iproc-2-go/background-bottom.png");
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #005db5;
+    background-position: bottom;
 }

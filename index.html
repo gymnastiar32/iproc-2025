@@ -33,21 +33,26 @@
     <link rel="stylesheet" href="lib/css/output.css" defermedia="screen">
     <link rel="stylesheet" href="lib/css/flowbite.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <nav id="navbar" class="px-4 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
-        <div class="flex flex-wrap  items-center mx-auto max-w-screen-xl w-full">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl w-full">
             <div class="p-2 mr-5">
                 <a href="#" class="">
                     <img src="lib/img/Iproc.png" alt="iProc">
                 </a>
             </div>
 
-            <div class="flex items-center space-x-4 lg:space-x-6 lg:order-2 ml-auto">
+            <div class="flex items-center space-x-4 lg:space-x-6 lg:order-2">
                 <!-- Language Dropdown with Flags -->
                 <div class="relative inline-block text-left">
-                    <button data-dropdown-toggle="languageDropdown" class="inline-flex items-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300 focus:ring-4 cursor-pointer"
+                    <button data-dropdown-toggle="languageDropdown"
+                        class="inline-flex items-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300 focus:ring-4 cursor-pointer"
                         type="button">
                         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/30px-Flag_of_the_United_Kingdom.svg.png"
                             alt="English Flag" class="w-5 h-5 mr-2">
@@ -98,39 +103,33 @@
                             d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
-
-
-
             </div>
-
 
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="menu">
                 <ul class="navbar-nav nav flex flex-col mt-4 font-medium lg:flex-row lg:space-x-2 lg:mt-0">
                     <li class="nav-item">
-                        <a href="#home"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded active bg-blue-100">Home</a>
+                        <a href="index.html#home"
+                            class="nav-link text-base block text-[#005db5] hover:bg-blue-100 w-full py-1.5 px-3 rounded active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about-us"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">About
-                            us</a>
+                        <a href="index.html#about-us"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Problem</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#features"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Features</a>
+                        <a href="index.html#features"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#technology"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Technology</a>
+                        <a href="index.html#features"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Fitur</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#customer-story"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Client
-                            Stories</a>
+                        <a href="index.html#features"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Perbandingan</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-2 px-3 rounded">Blog</a>
+                        <a href="index.html#technology"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -138,60 +137,858 @@
     </nav>
 
     <main>
-        <section id="home" data-section="home" class="hero flex justify-center px-4 sm:px-12 pb-[125px] pt-[175px]">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-screen-xl">
-                <div>
-                    <img src="lib/img/iProc.svg" alt="iProc" class="w-48">
-                    <h1 class="text-2xl font-extrabold text-gray-900 sm:text-4xl!">Integrated Procurement
-                        Platform
+        <section class="hero pt-20" id="home" data-section="home">
+            <div class="max-w-screen-2xl mx-auto px-4 md:px-0">
+                <div class="relative -bottom-20">
+                    <h1 class="mb-3 text-2xl text-center sm:text-6xl! font-extrabold text-gray-900">
+                        Integrated Procurement Platform
                     </h1>
-                    <p class="text-sm text-gray-900 mt-4 sm:text-base!">
-                        An innovative and reliable eProcurement solution designed to help <br> enhance
-                        efficiency at every
+                    <p class="text-gray-600 text-center max-w-1/2 text-sm sm:text-xl mx-auto">
+                        An innovative and reliable eProcurement solution designed to help enhance efficiency at every
                         stage of your procurement process.
-
-                    </p>
-                    <div class="mt-8 flex text-center flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-                        <a class="w-full" href="https://wa.me/08129402205">
-                            <button type="button"
-                                class="bg-primary py-2 px-6 text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:text-base! text-center flex justify-center items-center w-full lg:w-auto cursor-pointer">
-                                Contact Us
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </button>
-                        </a>
-
-
-                    </div>
                 </div>
-
-                <!-- Video Content -->
-                <div class="flex items-center">
-                    <iframe src="https://www.youtube.com/embed/ugrnTcuBVZg?si=ZZIH1rGEAWqDZJIy"
-                        title="YouTube video player" frameborder="0"
+                <div
+                    class="iframe-wrapper relative -bottom-40 overflow-hidden w-[80%] mx-auto px-6 pt-6 bg-linear-[180deg,#02498D,#015DB54D] rounded-t-4xl">
+                    <iframe class="w-full rounded-t-2xl"
+                        src="https://www.youtube.com/embed/ugrnTcuBVZg?si=iYoGTDEeYlXL3tb3" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                        class="iframe w-full border-[20px] border-white rounded-lg shadow-lg"></iframe>
-
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
             </div>
         </section>
-        <section class="slide-iproc">
-            <div class="w-full max-w-screen-xl mx-auto relative">
+        <div class="py-20 bg-[#24A3F2]">
+
+        </div>
+        <section id="about-us" data-section="about-us" class="feature bg-gray-50">
+            <div
+                class="w-full max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-20">
+                <div class="w-auto px-5 lg:px-0">
+                    <h2 class="text-2xl sm:text-4xl! font-extrabold text-white mb-6">What is iProc?</h2>
+                    <p class="text-sm sm:text-xl text-white mb-4">
+                        iProc is an Indonesian-made eProcurement platform designed to help companies comprehensively
+                        manage
+                        various
+                        aspects of procurement, including demand planning, contract management, inventory management,
+                        and asset
+                        monitoring and management. It utilizes technology to enhance operational efficiency, reduce
+                        costs, and
+                        ensure transparency and compliance with company policies.
+
+                    </p>
+                    <p class="text-sm md:text-lg text-white">
+                        The combination of iProc and Pengadaan.com will maximize the digital potential of procurement
+                        and
+                        accelerate
+                        the company’s digital transformation.
+                    </p>
+                </div>
+                <img class="w-[70%] md:max-w-[360px] lg:max-w-[480px] xl:max-w-[580px] rounded-lg"
+                    src="lib/img/tablet-iproc.png" alt="iProc Tablet Interface">
+
+            </div>
+        </section>
+
+        <section class="count-up">
+            <div class="w-full max-w-screen-2xl mx-auto px-4 sm:px-0 py-16">
+                <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 text-center">Effortless solutions,
+                    impactful
+                    outcomes</h2>
+                <div class="mt-16 w-full mx-auto grid grid-cols-12 gap-8">
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-6 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path
+                                        d="M26.8386 14.0032V16.3366C26.8386 20.2026 21.0928 23.3366 14.0052 23.3366C7.04413 23.3366 1.37751 20.3135 1.17735 16.543L1.17188 16.3366V14.0032C1.17188 17.8692 6.91756 21.0032 14.0052 21.0032C21.0928 21.0032 26.8386 17.8692 26.8386 14.0032ZM14.0052 4.66992C21.0928 4.66992 26.8386 7.80393 26.8386 11.6699C26.8386 15.5359 21.0928 18.6699 14.0052 18.6699C6.91756 18.6699 1.17188 15.5359 1.17188 11.6699C1.17188 7.80393 6.91756 4.66992 14.0052 4.66992Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num text-gray-900" data-val="16">00</span>%+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">Cost Saving</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M14.3346 25.6666C7.89131 25.6666 2.66797 20.4432 2.66797 14C2.66797 7.55665 7.89131 2.33331 14.3346 2.33331C20.7779 2.33331 26.0013 7.55665 26.0013 14C26.0013 20.4432 20.7779 25.6666 14.3346 25.6666ZM15.5013 14V8.16665H13.168V16.3333H20.168V14H15.5013Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num text-gray-900" data-val="35">00</span>%+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">Time Reduction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M26.3392 6.99976H18.1726C14.3066 6.99976 11.1725 10.1338 11.1725 13.9998C11.1725 17.8657 14.3066 20.9998 18.1726 20.9998H26.3392V23.3331C26.3392 23.9774 25.8169 24.4998 25.1726 24.4998H4.17253C3.5282 24.4998 3.00586 23.9774 3.00586 23.3331V4.66642C3.00586 4.02208 3.5282 3.49976 4.17253 3.49976H25.1726C25.8169 3.49976 26.3392 4.02208 26.3392 4.66642V6.99976ZM18.1726 9.33309H27.5059V18.6664H18.1726C15.5951 18.6664 13.5059 16.5771 13.5059 13.9998C13.5059 11.4224 15.5951 9.33309 18.1726 9.33309ZM18.1726 12.8331V15.1664H21.6726V12.8331H18.1726Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num " data-val="1920">0000</span> Billion+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">Saving Value / Year</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path
+                                        d="M10.8902 13.4193L13.4219 13.4199C16.3214 13.4199 18.6719 15.7704 18.6719 18.6699H10.504L10.5052 19.8366L19.8386 19.8357V18.6699C19.8386 17.4071 19.4673 16.2163 18.8048 15.169L22.1719 15.1699C24.4962 15.1699 26.503 16.5294 27.4407 18.4966C24.6818 22.1373 20.2141 24.5033 15.1719 24.5033C11.9504 24.5033 9.22137 23.8142 7.00484 22.6077L7.00642 11.7528C8.45956 11.9609 9.78927 12.5516 10.8902 13.4193ZM5.83854 22.1699C5.83854 22.8143 5.31621 23.3366 4.67188 23.3366H2.33854C1.69421 23.3366 1.17188 22.8143 1.17188 22.1699V11.6699C1.17188 11.0256 1.69421 10.5033 2.33854 10.5033H4.67188C5.31621 10.5033 5.83854 11.0256 5.83854 11.6699V22.1699ZM21.0052 5.83661C22.9382 5.83661 24.5052 7.4036 24.5052 9.33661C24.5052 11.2696 22.9382 12.8366 21.0052 12.8366C19.0722 12.8366 17.5052 11.2696 17.5052 9.33661C17.5052 7.4036 19.0722 5.83661 21.0052 5.83661ZM12.8386 2.33661C14.7715 2.33661 16.3386 3.90361 16.3386 5.83661C16.3386 7.7696 14.7715 9.33661 12.8386 9.33661C10.9056 9.33661 9.33854 7.7696 9.33854 5.83661C9.33854 3.90361 10.9056 2.33661 12.8386 2.33661Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num " data-val="12300">00000</span> Billion+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500"> PO Values/Year</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M2.66797 25.6667C2.66797 20.512 6.84664 16.3334 12.0013 16.3334C17.156 16.3334 21.3346 20.512 21.3346 25.6667H2.66797ZM12.0013 15.1667C8.1338 15.1667 5.0013 12.0342 5.0013 8.16669C5.0013 4.29919 8.1338 1.16669 12.0013 1.16669C15.8688 1.16669 19.0013 4.29919 19.0013 8.16669C19.0013 12.0342 15.8688 15.1667 12.0013 15.1667ZM20.5912 17.7721C24.1909 18.692 26.8972 21.8441 27.1488 25.6667H23.668C23.668 22.6219 22.5015 19.8496 20.5912 17.7721ZM18.2314 15.1164C20.1362 13.4076 21.3346 10.9271 21.3346 8.16669C21.3346 6.51312 20.9046 4.96 20.1504 3.61304C22.8225 4.14632 24.8346 6.50378 24.8346 9.33335C24.8346 12.5563 22.2242 15.1667 19.0013 15.1667C18.7403 15.1667 18.4833 15.1495 18.2314 15.1164Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num" data-val="8000">0000</span>+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">Users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M8.83309 8.16665V3.49998C8.83309 2.85565 9.35542 2.33331 9.99975 2.33331H25.1664C25.8108 2.33331 26.3331 2.85565 26.3331 3.49998V18.6666C26.3331 19.311 25.8108 19.8333 25.1664 19.8333H20.5V24.4912C20.5 25.1404 19.9762 25.6666 19.3246 25.6666H4.17516C3.526 25.6666 3 25.1429 3 24.4912L3.00322 9.34204C3.00336 8.69289 3.5271 8.16665 4.17863 8.16665H8.83309ZM11.1664 8.16665H19.3248C19.9738 8.16665 20.5 8.69039 20.5 9.34204V17.5H23.9998V4.66665H11.1664V8.16665ZM10.5862 21L17.1858 14.4003L15.5359 12.7504L10.5862 17.7002L8.11128 15.2253L6.46137 16.8752L10.5862 21Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num" data-val="20000">000000</span> +
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">Eligible Vendors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                                    fill="none">
+                                    <path
+                                        d="M7.00651 10.5H23.268L23.8513 8.16665H9.33984V5.83331H25.3456C25.9899 5.83331 26.5123 6.35565 26.5123 6.99998C26.5123 7.09537 26.5006 7.1904 26.4774 7.28294L23.5607 18.9496C23.431 19.469 22.9643 19.8333 22.4289 19.8333H5.83984C5.19552 19.8333 4.67318 19.311 4.67318 18.6666V4.66665H2.33984V2.33331H5.83984C6.48418 2.33331 7.00651 2.85565 7.00651 3.49998V10.5ZM7.00651 26.8333C5.71785 26.8333 4.67318 25.7887 4.67318 24.5C4.67318 23.2113 5.71785 22.1666 7.00651 22.1666C8.29518 22.1666 9.33984 23.2113 9.33984 24.5C9.33984 25.7887 8.29518 26.8333 7.00651 26.8333ZM21.0065 26.8333C19.7178 26.8333 18.6732 25.7887 18.6732 24.5C18.6732 23.2113 19.7178 22.1666 21.0065 22.1666C22.2952 22.1666 23.3399 23.2113 23.3399 24.5C23.3399 25.7887 22.2952 26.8333 21.0065 26.8333Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num" data-val="25000">000000</span>+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">PO / Year </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M22.9429 17.6233C24.7477 13.3491 23.1278 8.30002 19.0059 5.92024C16.0273 4.20053 12.4947 4.30925 9.70792 5.89819L8.55017 3.87191C12.0336 1.88578 16.4492 1.74987 20.1725 3.89952C25.4117 6.92431 27.4172 13.3989 24.9763 18.7973L26.5417 19.7011L21.6824 22.2843L21.4899 16.7845L22.9429 17.6233ZM5.73552 10.383C3.93071 14.6572 5.55067 19.7063 9.67256 22.086C12.6512 23.8057 16.1836 23.6971 18.9703 22.1082L20.1281 24.1345C16.6447 26.1205 12.2292 26.2564 8.50589 24.1068C3.26681 21.082 1.2613 14.6074 3.70215 9.20898L2.13672 8.30518L6.99597 5.72206L7.18854 11.2218L5.73552 10.383ZM10.2559 16.3365H16.6725C16.9948 16.3365 17.2559 16.0753 17.2559 15.7531C17.2559 15.431 16.9948 15.1698 16.6725 15.1698H12.0059C10.3951 15.1698 9.08922 13.864 9.08922 12.2531C9.08922 10.6423 10.3951 9.33649 12.0059 9.33649H13.1725V8.16982H15.5059V9.33649H18.4225V11.6698H12.0059C11.6837 11.6698 11.4226 11.931 11.4226 12.2531C11.4226 12.5753 11.6837 12.8365 12.0059 12.8365H16.6725C18.2834 12.8365 19.5892 14.1423 19.5892 15.7531C19.5892 17.364 18.2834 18.6698 16.6725 18.6698H15.5059V19.8365H13.1725V18.6698H10.2559V16.3365Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num" data-val="210000">0000000</span>+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500">Transaction / Year </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-4 bg-[#48ACE133] rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
+                                    fill="none">
+                                    <path
+                                        d="M13.0505 20.7616L14.0743 18.4163C14.9856 16.3294 16.6257 14.6681 18.6716 13.7599L21.4899 12.5089C22.3859 12.1112 22.3859 10.8076 21.4899 10.4099L18.7595 9.19795C16.6611 8.26646 14.9916 6.54363 14.0959 4.38545L13.0587 1.88621C12.6739 0.958747 11.3924 0.958749 11.0075 1.88621L9.97031 4.38543C9.07466 6.54363 7.40511 8.26646 5.30665 9.19795L2.57634 10.4099C1.68028 10.8076 1.68028 12.1112 2.57634 12.5089L5.39468 13.7599C7.44053 14.6681 9.08065 16.3294 9.99187 18.4163L11.0158 20.7616C11.4094 21.6629 12.6568 21.6629 13.0505 20.7616ZM23.302 26.4716L23.5899 25.8116C24.1032 24.6349 25.0278 23.6979 26.1814 23.1854L27.0685 22.7912C27.5484 22.5781 27.5484 21.8807 27.0685 21.6676L26.2311 21.2954C25.0478 20.7697 24.1066 19.7981 23.602 18.5814L23.3064 17.8682C23.1002 17.3712 22.4131 17.3712 22.2069 17.8682L21.9113 18.5814C21.4068 19.7981 20.4657 20.7697 19.2823 21.2954L18.4448 21.6676C17.965 21.8807 17.965 22.5781 18.4448 22.7912L19.3319 23.1854C20.4856 23.6979 21.4101 24.6349 21.9234 25.8116L22.2115 26.4716C22.4222 26.9547 23.0911 26.9547 23.302 26.4716Z"
+                                        fill="#005DB5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap">
+                                    <span class="num" data-val="2000">0000</span>+
+                                </p>
+                                <p class="text-sm sm:text-lg! text-gray-500"> Procurement Points </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" data-section="features" class="feature2 py-20">
+            <div class="w-full max-w-screen-2xl mx-auto flex flex-col items-center px-4 sm:px-0">
+                <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mb-20 text-center">
+                    Value-Added Solutions from iProc
+                </h2>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-9!">
+                    <div class="text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                            <rect width="90" height="90" rx="15" fill="#24A3F2" />
+                            <path
+                                d="M44.5 67.0002C32.0736 67.0002 22 56.9265 22 44.5002C22 32.0738 32.0736 22.0002 44.5 22.0002C56.9263 22.0002 67 32.0738 67 44.5002C67 56.9265 56.9263 67.0002 44.5 67.0002ZM46.75 44.5002V33.2502H42.25V49.0002H55.75V44.5002H46.75Z"
+                                fill="white" />
+                        </svg>
+                        <p class="text-base sm:text-xl font-bold text-gray-900 mt-4">
+                            Cost and Time Savings
+                        </p>
+                        <p class="text-sm sm:text-base! text-gray-500 mt-4">
+                            With various features integrated into one platform, iProc can accelerate the procurement
+                            workflow and help
+                            companies make strategic decisions based on accurate data to identify better cost-saving
+                            opportunities.
+                        </p>
+                    </div>
+
+                    <div class="text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="91" height="90" viewBox="0 0 91 90" fill="none">
+                            <rect x="0.666016" width="90" height="90" rx="15" fill="#FFBC50" />
+                            <path
+                                d="M63.9091 58.8891H68V63.0002H23V58.8891H27.0909V28.0558C27.0909 26.9206 28.0067 26.0002 29.1364 26.0002H49.5909C50.7206 26.0002 51.6364 26.9206 51.6364 28.0558V58.8891H55.7273V38.3336H61.8636C62.9933 38.3336 63.9091 39.2539 63.9091 40.3891V58.8891ZM35.2727 42.4447V46.5558H43.4545V42.4447H35.2727ZM35.2727 34.2225V38.3336H43.4545V34.2225H35.2727Z"
+                                fill="white" />
+                        </svg>
+                        <p class="text-base sm:text-xl font-bold text-gray-900 mt-4">
+                            The Core Infrastructure for Procurement 4.0
+                        </p>
+                        <p class="text-sm sm:text-base! text-gray-500 mt-4">
+                            iProc supports your journey towards Procurement 4.0, where every strategic and operational
+                            decision is
+                            made
+                            based on in-depth data analysis, creating efficiency, effectiveness, and sustainable
+                            competitive
+                            advantage.
+                        </p>
+                    </div>
+
+                    <div class="text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="91" height="90" viewBox="0 0 91 90" fill="none">
+                            <rect x="0.333984" width="90" height="90" rx="15" fill="#24A3F2" />
+                            <path
+                                d="M27.7218 24.0002V61.3336H65.4958V66.0002H23V24.0002H27.7218ZM62.9916 30.8587L68 35.8085L53.6914 49.9499L46.6088 42.9492L37.3085 52.1419L32.3003 47.1919L46.6088 33.0505L53.6914 40.0512L62.9916 30.8587Z"
+                                fill="white" />
+                        </svg>
+                        <p class="text-base sm:text-xl font-bold text-gray-900 mt-4">
+                            Real-Time Visibility
+                        </p>
+                        <p class="text-sm sm:text-base! text-gray-500 mt-4">
+                            iProc allows you to track and monitor every step of your procurement workflow in real-time,
+                            enabling you
+                            to
+                            identify spending trends, evaluate supplier effectiveness, and make strategic adjustments as
+                            needed.
+                        </p>
+                    </div>
+
+                    <div class="text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+                            <rect width="90" height="90" rx="15" fill="#FFBC50" />
+                            <path
+                                d="M62.7778 67.0002H27.2222C25.9949 67.0002 25 65.9929 25 64.7502V24.2502C25 23.0076 25.9949 22.0002 27.2222 22.0002H62.7778C64.0051 22.0002 65 23.0076 65 24.2502V64.7502C65 65.9929 64.0051 67.0002 62.7778 67.0002ZM33.8889 31.0002V40.0002H42.7778V31.0002H33.8889ZM33.8889 44.5002V49.0002H56.1111V44.5002H33.8889ZM33.8889 53.5002V58.0002H56.1111V53.5002H33.8889ZM47.2222 33.2502V37.7502H56.1111V33.2502H47.2222Z"
+                                fill="white" />
+                        </svg>
+                        <p class="text-base sm:text-xl font-bold text-gray-900 mt-4">
+                            Centralized Data and Documentation
+                        </p>
+                        <p class="text-sm sm:text-base! text-gray-500 mt-4">
+                            Our platform serves as a centralized hub that stores all procurement-related data and
+                            documents.
+                            You can
+                            easily retrieve and access important information, ensuring accuracy, compliance, and more
+                            efficient audit
+                            processes.
+                        </p>
+                    </div>
+
+                    <div class="text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="91" height="90" viewBox="0 0 91 90" fill="none">
+                            <rect x="0.666016" width="90" height="90" rx="15" fill="#24A3F2" />
+                            <path
+                                d="M54.8889 22.0002L66 33.2502V64.7687C66 66.0012 65.0113 67.0002 63.7924 67.0002H28.2076C26.9884 67.0002 26 65.9758 26 64.7687V24.2318C26 22.9994 26.9888 22.0002 28.2076 22.0002H54.8889ZM43.7778 33.2502V55.7502H48.2222V33.2502H43.7778ZM52.6667 42.2502V55.7502H57.1111V42.2502H52.6667ZM34.8889 46.7502V55.7502H39.3333V46.7502H34.8889Z"
+                                fill="white" />
+                        </svg>
+                        <p class="text-base sm:text-xl font-bold text-gray-900 mt-4">
+                            Strategic Procurement
+                        </p>
+                        <p class="text-sm sm:text-base! text-gray-500 mt-4">
+                            With iProc, the procurement function is no longer just an administrative task, but an
+                            essential
+                            part of
+                            the
+                            business strategy to drive growth and innovation.
+                        </p>
+                    </div>
+
+                    <div class="text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="91" height="90" viewBox="0 0 91 90" fill="none">
+                            <rect x="0.333984" width="90" height="90" rx="15" fill="#FFBC50" />
+                            <path
+                                d="M47.6783 24.0002L47.677 26.758L58.5703 30.3572L66.4834 27.7444L67.861 31.8387L61.2572 34.0194L68 52.3871C65.6214 54.8411 62.276 56.3687 58.5703 56.3687C54.8649 56.3687 51.5195 54.8411 49.1409 52.3871L55.8809 34.0194L47.677 31.309V60.6845H56.3919V65.0002H34.6079V60.6845H43.3202V31.309L35.1163 34.0194L41.8591 52.3871C39.4804 54.8411 36.135 56.3687 32.4295 56.3687C28.7239 56.3687 25.3785 54.8411 23 52.3871L29.74 34.0194L23.1388 31.8387L24.5165 27.7444L32.4295 30.3572L43.3202 26.758L43.3215 24.0002H47.6783ZM58.5703 39.3271L55.4822 47.7371H61.658L58.5703 39.3271ZM32.4295 39.3271L29.3413 47.7371H35.5171L32.4295 39.3271Z"
+                                fill="white" />
+                        </svg>
+                        <p class="text-base sm:text-xl font-bold text-gray-900 mt-4">
+                            Applying GRC (Governance, Risk, and Compliance Principles)
+                        </p>
+                        <p class="text-sm sm:text-base! text-gray-500 mt-4">
+                            iProc helps ensure compliance with rules and regulations, risk management, and the
+                            maintenance
+                            of good
+                            governance in the procurement process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technology" data-section="technology" class="w-full py-20">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-0">
+                <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mb-8 text-center">Our Key Capabilities
+                </h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-white rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-1" style="background-color: #005DB5;">
+                        Commodity Management
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-[#005db5] bg-[#24A3F226] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-2">
+                        Vendor Management
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-[#005db5] bg-[#24A3F226] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-3">
+                        Smart Purchasing
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-[#005db5] bg-[#24A3F226] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-4">
+                        Smart Sourcing
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-[#005db5] bg-[#24A3F226] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-5">
+                        Smart Contract
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-[#005db5] bg-[#24A3F226] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-6">
+                        Smart Invoice & Payment
+                    </button>
+                    <button
+                        class="tab-button px-4 py-2 text-sm font-medium text-[#005db5] bg-[#24A3F226] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
+                        data-tab-target="tab-7">
+                        Analytics
+                    </button>
+                </div>
+                <div class="mt-10">
+                    <div id="tab-1" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 ">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-1.svg" class="min-w-[600px]"
+                                    alt="Commodity Management Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <h3 class="text-xl sm:text-3xl! font-bold text-white">Commodity Management</h3>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    Grouping, data collection, and commodity analysis enable more informed and strategic
+                                    decision-making,
+                                    supporting procurement optimization and cost savings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 hidden">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-2.svg" class="min-w-[600px]"
+                                    alt="Commodity Management Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <h3 class="text-xl sm:text-3xl! font-bold text-white">Vendor Vanagement</h3>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    Manage the entire vendor management cycle, from onboarding to performance
+                                    tracking—all within one
+                                    platform..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 hidden">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-3.svg" class="min-w-[600px]"
+                                    alt="Vendor Management Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <h3 class="text-xl sm:text-3xl! font-bold text-white">Smart Purchasing</h3>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    This feature facilitates efficient operational/tactical procurement through
+                                    access
+                                    to Private
+                                    Catalogues and Public Catalogues, providing ease in acquiring the goods and
+                                    services
+                                    needed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 hidden">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-4.svg" class="min-w-[600px]"
+                                    alt="Commodity Management Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <p class="text-xl sm:text-3xl! font-bold text-white">Smart Sourching</p>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    iProc simplifies strategic procurement management processes, from procurement
+                                    strategy planning and
+                                    preparation to execution, ensuring best-value sourcing is achieved..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-5" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 hidden">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-5.svg" class="min-w-[600px]"
+                                    alt="Commodity Management Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <p class="text-xl sm:text-3xl! font-bold text-white">Smart Contract</p>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    The entire contract management process—from drafting, execution, monitoring,
+                                    evaluation, to
+                                    closure—can be managed efficiently with this feature. Additionally, e-Sign and
+                                    e-Stamp features make
+                                    contract management even more practical.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-6" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 hidden">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-6.svg" class="min-w-[600px]"
+                                    alt="Commodity Management Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <p class="text-xl sm:text-3xl! font-bold text-white">Smart Invoice & Payment</p>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    This feature allows companies to monitor invoice and payment status in real-time
+                                    with an integrated
+                                    three-way matching system.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-7" class="tab-content bg-[#24A3F2]! rounded-lg px-10 py-2 hidden">
+                        <div class="flex flex-col lg:flex-row items-center gap-8">
+                            <div>
+                                <img src="lib/img/key-7.svg" class="min-w-[600px]" alt="Iproc Analytics Illustration" />
+                            </div>
+                            <div class="content-tab w-full lg:w-1/2">
+                                <h3 class="text-xl sm:text-3xl! font-bold text-white">iProc Analytics</h3>
+                                <p class="text-sm sm:text-base! mt-4 text-white">
+                                    Access the data you need with comprehensive reporting and analytics
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="procurement w-full flex py-20">
+            <div class="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
+                <div class="flex mb-8 gap-4">
+                    <p class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-10">
+                        iProc:
+                        Leading the Way into <br> with
+                        Intelligent Automation.</p>
+                    <img src="lib/img/logo-proc4 2.svg" alt="iProc Logo" class="w-24 md:w-32 lg:w-32">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 px-4 sm:px-0 gap-8">
+                    <img src="lib/img/Picture11.svg" alt="Image 1" class="img-pro mx-auto w-2/3 sm:w-full">
+                    <img src="lib/img/Picture12.svg" alt="Image 2" class="img-pro mx-auto w-2/3 sm:w-full ">
+                </div>
+            </div>
+        </section>
+        <section class="iproc-feature-2 py-20">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-0 text-center">
+                <div class="flex flex-col gap-14">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="bg-[#48ACE1] rounded-2xl p-4 overflow-hidden flex items-end">
+                            <img src="./lib/img/iproc-cloud.png" class="mx-auto relative -bottom-4 w-4/5"
+                                alt="iProc Cloud">
+                        </div>
+                        <div class="text-left">
+                            <div>
+                                <img src="lib/img/Iproc cloud.svg" alt="iProc Cloud Logo" class="mb-4 w-20"
+                                    style="width: 120px;">
+                                <p class="text-2xl sm:text-4xl! font-extrabold mt-4">iProc Cloud</p>
+
+                                <ul class="mt-6 space-y-3 text-sm sm:text-base! text-gray-700 text-left mb-4">
+                                    <li class="flex items-start space-x-2">
+                                        <span>Implementasi eProcurement berbasis cloud yang mendukung kebutuhan
+                                            organisasi
+                                            yang terus
+                                            berkembang dan berubah tanpa perlu investasi infrastruktur tambahan.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="mt-6">
+                                <button
+                                    class="bg-[#005db5] text-sm sm:text-base! text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#02519B] cursor-pointer">
+                                    Click Here for More Information!
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="bg-[#FFBC50] rounded-2xl p-4 overflow-hidden flex items-end">
+                            <img src="./lib/img/iproc-2go.png" class="mx-auto relative -bottom-4 w-4/5" alt="iProc 2Go">
+                        </div>
+                        <div class="text-left">
+                            <div>
+                                <img src="lib/img/Iproc 2 go.svg" alt="iProc 2 Go Logo" class="mb-4 w-20">
+                                <p class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mt-4">iProc 2 Go!</p>
+
+                                <ul class="mt-6 space-y-3 text-sm sm:text-base! text-gray-700 text-left mb-4">
+                                    <li class="flex items-start space-x-2">
+                                        <span>Mempermudah proses persetujuan Purchase Requisition (PR), barang, vendor,
+                                            dan
+                                            Request for
+                                            Quotation (RFQ) langsung dari smartphone Anda.</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span>Mendukung proses Purchase-to-Pay (P2P) melalui eCatalogue secara praktis
+                                            dan
+                                            fleksibel.</span>
+                                    </li>
+                                    <li class="flex items-start space-x-2">
+                                        <span>Dilengkapi dengan antarmuka yang ramah pengguna untuk proses pengadaan
+                                            yang
+                                            lebih
+                                            efisien.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="mt-6">
+                                <button
+                                    class="bg-[#005db5] text-sm sm:text-base! text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#02519B] cursor-pointer">
+                                    Click Here for More Information!
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="customer-story" data-section="customer-story" class="testimonial py-12">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-0">
+                <h2 class="text-2xl sm:text-4xl! font-bold text-white text-center">Proven Track Record</h2>
+                <p class="text-sm sm:text-base! text-center text-gray-200 my-6">Hear it From Our Clients</p>
+                <div class="grid grid-cols-3 mx-auto gap-8">
+                    <div class="flex flex-col rounded-lg bg-white shadow p-6">
+                        <p class="text-gray-500 mb-5">"Penerapan aplikasi iProc merupakan bagian dari strategi WIKA
+                            dalam
+                            mengimplementasikan konsep Procurement 4.0. Aplikasi iProc berhasil mempercepat proses
+                            pengadaan hingga 62% , menghasilkan penghematan sebesar 273 miliar dalam tiga tahun, serta
+                            meningkatkan produktivitas organisasi pengadaan (lean organization) dalam mengelola
+                            pengadaan dan kontrak senilai Rp 6,4 triliun dengan hanya 14 personel."
+                        </p>
+                        <div class="flex items-start mt-auto gap-4">
+                            <img class="w-10 rounded-full shadow" src="./lib/img/gilang.png" alt="gilang avatar">
+                            <div>
+                                <h3>Gilang Ramadhan</h3>
+                                <p class="text-sm text-gray-500">Expert Associate SCM, BSM, PMO Holding Infrastructure,
+                                    PMO Subholding Infrastructure
+                                    - PT Wijaya Karya (Persero)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-lg bg-white shadow p-6">
+                        <p class="text-gray-500 mb-5">"Implementasi Aplikasi iProc di PT Pembangunan Jaya Ancol telah
+                            mengalami transformasi sejak 2014, dimulai dengan fitur dasar yang sederhana dan berkembang
+                            secara bertahap hingga mencakup kontrak elektronik. Pada tahun 2019, lebih dari 2.000 paket
+                            pengadaan yang dikelola menghasilkan efisiensi lebih dari 12%"
+                        </p>
+                        <div class="flex items-start mt-auto gap-4">
+                            <img class="w-10 rounded-full shadow" src="./lib/img/eddy.png" alt="eddy avatar">
+                            <div>
+                                <h3>Eddy Prastiyo</h3>
+                                <p class="text-sm text-gray-500">Vice President of Procurement - PT Pembangunan Jaya
+                                    Ancol (Persero) Tbk
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-lg bg-white shadow p-6">
+                        <p class="text-gray-500 mb-5">"PT Bukit Asam berhasil mencapai efisiensi lebih dari Rp 700
+                            miliar hanya dalam tahun pertama implementasi aplikasi iProc, berkat transparansi informasi
+                            pengadaan dan kemudahan bagi vendor dalam mengikuti proses pengadaan. Sementara itu,
+                            aplikasi iProc di PT Semen Baturaja telah terintegrasi dengan sistem ERP (SAP) dan
+                            dilengkapi dengan fitur penilaian vendor yang komprehensif."
+                        </p>
+                        <div class="flex items-start mt-auto gap-4">
+                            <img class="w-10 rounded-full shadow" src="./lib/img/jamil.png" alt="jamil avatar">
+                            <div>
+                                <h3>M. Jamil</h3>
+                                <p class="text-sm text-gray-500">Director of Commerce - PT Bukit Asam (Persero) Director
+                                    of Finance - PT Semen Baturaja (Persero) Tbk
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="industries" data-section="industries" class="sector py-20">
+            <div class="max-w-screen-2xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900">Industries We Serve
+                    </h2>
+                    <p class="text-sm sm:text-base! text-gray-500 my-4">We provide innovative and customized solutions
+                        to meet the unique challenges of various industries.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-8! justify-center items-center">
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M23.3028 4.21122C25.6459 1.86807 29.445 1.86807 31.7881 4.21122C34.1313 6.55436 34.1313 10.3533 31.7881 12.6965L27.5452 16.9394L28.0758 17.47C28.6615 18.0557 28.6615 19.0055 28.0758 19.5913C27.49 20.177 26.5402 20.177 25.9545 19.5913L25.4242 19.061L16.1022 28.3831C15.2646 29.2207 14.1977 29.7916 13.0362 30.0239L10.4049 30.5501C9.82415 30.6664 9.29075 30.9518 8.87195 31.3706L7.39292 32.8496C6.80712 33.4354 5.85738 33.4354 5.27159 32.8496L3.15027 30.7283C2.56449 30.1426 2.56449 29.1928 3.15027 28.607L4.6293 27.1279C5.04812 26.7091 5.33358 26.1757 5.44973 25.595L5.97597 22.9637C6.20829 21.8021 6.77922 20.7353 7.61682 19.8977L16.9389 10.5757L16.4085 10.0453C15.8227 9.45957 15.8227 8.50981 16.4085 7.92404C16.9944 7.33824 17.944 7.33824 18.5298 7.92404L19.0599 8.45412L23.3028 4.21122ZM19.0602 12.697L9.73814 22.0192C9.31934 22.438 9.03387 22.9714 8.91773 23.552L8.39147 26.1833C8.15916 27.3449 7.58823 28.4117 6.75063 29.2493C7.58823 28.4117 8.65503 27.8407 9.81657 27.6085L12.4478 27.0821C13.0286 26.966 13.562 26.6806 13.9808 26.2618L23.3028 16.9397L19.0602 12.697Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Chemicals</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M4.5 15H31.5V30.0066C31.5 30.8314 30.8326 31.5 30.0099 31.5H5.9901C5.16714 31.5 4.5 30.8328 4.5 30.0066V15ZM13.5 18V21H22.5V18H13.5ZM3 5.99971C3 5.17145 3.68297 4.5 4.4877 4.5H31.5123C32.334 4.5 33 5.16558 33 5.99971V12H3V5.99971Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Consumer Packaged Goods</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M11.9115 27C11.4659 25.0911 9.45618 23.5285 8.63093 22.4988C6.98468 20.4445 6 17.8372 6 15C6 8.37258 11.3726 3 18 3C24.6275 3 30 8.37258 30 15C30 17.8387 29.0142 20.4473 27.3665 22.5021C26.5416 23.5305 24.5337 25.0914 24.0885 27H11.9115ZM24 30V31.5C24 33.1569 22.6569 34.5 21 34.5H15C13.3431 34.5 12 33.1569 12 31.5V30H24ZM19.5 15.0072V9L12.75 18.0072H16.5V24.0072L23.25 15.0072H19.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Energy & Utilities</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M3 30H33V33H3V30ZM6 18H9V28.5H6V18ZM13.5 18H16.5V28.5H13.5V18ZM19.5 18H22.5V28.5H19.5V18ZM27 18H30V28.5H27V18ZM3 10.5L18 3L33 10.5V16.5H3V10.5ZM18 12C18.8285 12 19.5 11.3284 19.5 10.5C19.5 9.67158 18.8285 9 18 9C17.1715 9 16.5 9.67158 16.5 10.5C16.5 11.3284 17.1715 12 18 12Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Financial Services</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M3 28.5V12H1.5V9H6V6C6 5.17158 6.67158 4.5 7.5 4.5H28.5C29.3284 4.5 30 5.17158 30 6V9H34.5V12H33V28.5H34.5V31.5H1.5V28.5H3ZM19.5 28.5V18H16.5V28.5H19.5ZM12 28.5V18H9V28.5H12ZM27 28.5V18H24V28.5H27ZM9 7.5V9H27V7.5H9Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Government & Nonprofit</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path d="M15 15.1667V1.5L31.5 10.5V31.5H4.5V10.5L15 15.1667Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Industrial Manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M12 7.5H28.5C29.3284 7.5 30 8.17158 30 9V31.5C30 32.3284 29.3284 33 28.5 33H7.5C6.67158 33 6 32.3284 6 31.5V16.5L12 7.5ZM19.5 1.5H27C27.8284 1.5 28.5 2.17158 28.5 3V6H18V3C18 2.17158 18.6715 1.5 19.5 1.5ZM9 18V28.5H12V18H9Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Oil & Gas</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M24 1.5C24.8284 1.5 25.5 2.17158 25.5 3V7.5H31.5C32.3284 7.5 33 8.17158 33 9V30C33 30.8284 32.3284 31.5 31.5 31.5H4.5C3.67158 31.5 3 30.8284 3 30V9C3 8.17158 3.67158 7.5 4.5 7.5H10.5V3C10.5 2.17158 11.1716 1.5 12 1.5H24ZM19.5 13.5H16.5V18H12V21H16.4985L16.5 25.5H19.5L19.4985 21H24V18H19.5V13.5ZM22.5 4.5H13.5V7.5H22.5V4.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Pharma, Health & Life Sciences</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M6 24H30V7.5H6V24ZM19.5 27V30H25.5V33H10.5V30H16.5V27H4.4877C3.66608 27 3 26.3267 3 25.4888V6.01122C3 5.17661 3.68297 4.5 4.4877 4.5H31.5123C32.334 4.5 33 5.17338 33 6.01122V25.4888C33 26.3234 32.317 27 31.5123 27H19.5Z"
+                                    fill="white" />
+                                <path
+                                    d="M12 13.2203C13.7763 11.8317 16.0377 11 18.5 11C20.9623 11 23.2237 11.8317 25 13.2203L24.2777 14.0847C22.6988 12.8504 20.6887 12.1111 18.5 12.1111C16.3112 12.1111 14.3011 12.8504 12.7222 14.0847L12 13.2203ZM13.8055 15.3813C15.0884 14.3784 16.7216 13.7778 18.5 13.7778C20.2784 13.7778 21.9116 14.3784 23.1944 15.3813L22.4722 16.2458C21.3867 15.3972 20.0047 14.8889 18.5 14.8889C16.9952 14.8889 15.6133 15.3972 14.5278 16.2458L13.8055 15.3813ZM15.6111 17.5424C16.4005 16.9252 17.4056 16.5556 18.5 16.5556C19.5944 16.5556 20.5994 16.9252 21.3889 17.5424L20.6667 18.4068C20.0746 17.9439 19.3208 17.6667 18.5 17.6667C17.6792 17.6667 16.9254 17.9439 16.3333 18.4068L15.6111 17.5424ZM17.4166 19.7034C17.7127 19.4719 18.0896 19.3333 18.5 19.3333C18.9104 19.3333 19.2873 19.4719 19.5833 19.7034L18.5 21L17.4166 19.7034Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Technology</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M19.5 9V6H7.5V3H22.5V9H24C24.8284 9 25.5 9.67158 25.5 10.5V13.8L33.32 8.32607C33.6593 8.08853 34.1269 8.17106 34.3644 8.5104C34.4526 8.63646 34.5 8.78661 34.5 8.9405V27.0595C34.5 27.4737 34.1642 27.8095 33.75 27.8095C33.5961 27.8095 33.446 27.7622 33.32 27.674L25.5 22.2V28.5C25.5 29.3284 24.8284 30 24 30H3C2.17158 30 1.5 29.3284 1.5 28.5V10.5C1.5 9.67158 2.17158 9 3 9H19.5ZM7.5 15V18H10.5V15H7.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Media & Technology</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M25.5 28.5H28.5V16.5H19.5V28.5H22.5V19.5H25.5V28.5ZM4.5 28.5V6C4.5 5.17158 5.17158 4.5 6 4.5H27C27.8284 4.5 28.5 5.17158 28.5 6V13.5H31.5V28.5H33V31.5H3V28.5H4.5ZM10.5 16.5V19.5H13.5V16.5H10.5ZM10.5 22.5V25.5H13.5V22.5H10.5ZM10.5 10.5V13.5H13.5V10.5H10.5Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">Travel & Hospitality</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#24A3F226] rounded-lg text-gray-900 p-4">
+                        <div class="bg-[#005db5] rounded-lg p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M32.4 1.5H3.6C1.6146 1.5 0 3.1445 0 5.16667V30.8333C0 32.8555 1.6146 34.5 3.6 34.5H32.4C34.3854 34.5 36 32.8555 36 30.8333V5.16667C36 3.1445 34.3854 1.5 32.4 1.5ZM18.9 7C19.8936 7 20.7 7.82133 20.7 8.83333C20.7 9.84533 19.8936 10.6667 18.9 10.6667C17.9064 10.6667 17.1 9.84533 17.1 8.83333C17.1 7.82133 17.9064 7 18.9 7ZM13.5 7C14.4936 7 15.3 7.82133 15.3 8.83333C15.3 9.84533 14.4936 10.6667 13.5 10.6667C12.5064 10.6667 11.7 9.84533 11.7 8.83333C11.7 7.82133 12.5064 7 13.5 7ZM8.1 7C9.0936 7 9.9 7.82133 9.9 8.83333C9.9 9.84533 9.0936 10.6667 8.1 10.6667C7.1064 10.6667 6.3 9.84533 6.3 8.83333C6.3 7.82133 7.1064 7 8.1 7ZM3.6 30.8333V16.1667H32.4018L32.4036 30.8333H3.6Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <p class="text-sm sm:text-lg font-semibold text-wrap">And More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-iproc py-20">
+            <div class="w-full max-w-screen-2xl mx-auto relative">
+                <h2 class="text-2xl sm:text-4xl! font-bold text-white text-center mb-4">Our Clients</h2>
+                <div id="controls" class="flex justify-center items-center w-full mb-12">
+                    <button class="prev slider-button flex justify-center items-center">
+                        <svg class="w-4 h-4 -ml-[2px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 8 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
+                        </svg>
+                    </button>
+                    <h3 class="uppercase text-center text-xl text-white client-sector"></h3>
+                    <button class="next slider-button flex justify-center items-center">
+                        <svg class="w-4 h-4 -mr-[2px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 8 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                        </svg>
+                    </button>
+                </div>
                 <div class="my-slider w-full ">
-                    <div class="client1 w-full py-12 px-16">
-                        <h3 class="uppercase text-center text-3xl mb-6">Bumn & Bumd</h3>
+                    <div class="client-1 w-full">
                         <div class="flex flex-wrap justify-center gap-4">
                             <div
-                                class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[40%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
+                                class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
                                 <img src="lib/img/iproc-client-vector/bumnd/1.jpg" alt="logo client" class="h-16">
                             </div>
                             <div
-                                class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[40%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
+                                class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
                                 <img src="lib/img/iproc-client-vector/bumnd/2.jpg" alt="logo client" class="h-16">
                             </div>
                             <div
@@ -313,8 +1110,7 @@
 
                         </div>
                     </div>
-                    <div class="client2 w-full py-12 px-16">
-                        <h3 class="uppercase text-center text-3xl mb-6">Energi & Pertambangan</h3>
+                    <div class="client-2 w-full">
                         <div class="flex flex-wrap justify-center gap-4">
                             <div
                                 class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
@@ -444,8 +1240,7 @@
 
                         </div>
                     </div>
-                    <div class="client3 w-full py-12 px-16">
-                        <h3 class="uppercase text-center text-3xl mb-6">Keuangan dan bank</h3>
+                    <div class="client-3 w-full">
                         <div class="flex flex-wrap justify-center gap-4">
                             <div
                                 class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
@@ -535,8 +1330,7 @@
 
                         </div>
                     </div>
-                    <div class="client4 w-full py-12 px-16">
-                        <h3 class="uppercase text-center text-3xl mb-6">Manufaktur dan Konstruksi</h3>
+                    <div class="client-4 w-full">
                         <div class="flex flex-wrap justify-center gap-4">
                             <div
                                 class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
@@ -572,8 +1366,7 @@
 
                         </div>
                     </div>
-                    <div class="client5 w-full py-12 px-16">
-                        <h3 class="uppercase text-center text-3xl mb-6">Pemerintah</h3>
+                    <div class="client-5 w-full">
                         <div class="flex flex-wrap justify-center gap-4">
                             <div
                                 class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
@@ -678,9 +1471,7 @@
 
                         </div>
                     </div>
-                    <div class="client6 w-full py-12 px-16">
-                        <h3 class="uppercase text-center text-3xl mb-6">Telekomunikasi, Transportasi, dan
-                            Hiburan</h3>
+                    <div class="client-6 w-full">
                         <div class="flex flex-wrap justify-center gap-4">
                             <div
                                 class="flex justify-center items-center p-4 bg-white shadow rounded-md w-[45%] sm:w-[30%] md:w-[20%] lg:w-[15%]">
@@ -778,734 +1569,168 @@
                         </div>
                     </div>
                 </div>
-                <div id="controls">
-                    <button class="prev flex justify-center items-center">
-                        <svg class="w-4 h-4 -ml-[2px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 8 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
-                        </svg>
-                    </button>
-                    <button class="next flex justify-center items-center">
-                        <svg class="w-4 h-4 -mr-[2px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 8 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section id="about-us" data-section="about-us" class="feature bg-gray-50">
-            <div
-                class="w-full max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 py-16">
-                <img class="w-[70%] md:max-w-[360px] lg:max-w-[480px] xl:max-w-[580px] rounded-lg"
-                    src="lib/img/tablet-iproc.png" alt="iProc Tablet Interface">
-                <div class="w-auto px-5 lg:px-0">
-                    <h2 class="text-2xl sm:text-4xl! font-extrabold text-white mb-6">What is iProc?</h2>
-                    <p class="text-sm sm:text-lg text-white mb-4">
-                        iProc is an Indonesian-made eProcurement platform designed to help companies comprehensively
-                        manage
-                        various
-                        aspects of procurement, including demand planning, contract management, inventory management,
-                        and asset
-                        monitoring and management. It utilizes technology to enhance operational efficiency, reduce
-                        costs, and
-                        ensure transparency and compliance with company policies.
-
-                    </p>
-                    <p class="text-sm md:text-lg text-white">
-                        The combination of iProc and Pengadaan.com will maximize the digital potential of procurement
-                        and
-                        accelerate
-                        the company’s digital transformation.
-                    </p>
-                </div>
 
             </div>
         </section>
-        <section class="count-up">
-            <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-0 py-16">
-                <h2 class="text-2xl sm:text-4xl! font-extrabold text-white text-center">Effortless solutions, impactful
-                    outcomes</h2>
-                <div class="mt-16 w-full max-w-[800px] mx-auto">
-                    <div class="grid grid-cols-3 bg-white mb-8 divide-x divide-gray-200 rounded-xl shadow-lg">
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num text-yellow-400" data-val="16">00</span>%+
+        <section id="blog" data-section="blog" class="award py-20 bg-linear-[180deg,#EEF7FF,#EEF7FF00]">
+            <div class="max-w-screen-2xl mx-auto">
+                <p class="text-2xl sm:text-4xl! font-bold text-gray-900 text-center mb-8">Award</p>
+                <p class="text-sm sm:text-base! text-gray-600 text-center mb-8">
+                    iProc is a procurement platform that streamlines sourcing, <br>
+                    vendor management, and procurement for greater efficiency and transparency.
+                </p>
+                <div class="relative px-15">
+                    <div class="award-slider flex gap-8">
+                        <div class="rounded-lg bg-linear-[0deg,#00000033,#00000000] relative">
+                            <img class="w-full rounded-lg relative z-[-1]" src="./lib/img/image 250.png" alt="International APICTA 2010 Awards">
+                            <p class="text-sm sm:text-3xl! font-bold text-white absolute bottom-5 left-5 right-5">International APICTA 2010 Awards, Malaysia
                             </p>
-                            <p class="text-sm sm:text-base! text-center">Cost Saving</p>
                         </div>
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num text-yellow-400" data-val="35">00</span>%+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center">Time Reduction</p>
-                        </div>
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num " data-val="1920">0000</span> Billion+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center">Saving Value / Year</p>
+                        <div class="rounded-lg bg-linear-[0deg,#00000033,#00000000] relative">
+                            <img class="w-full rounded-lg relative z-[-1]"  src="./lib/img/image 248.png" alt="BUMN Award 2009">
+                            <p class="text-sm sm:text-3xl! font-bold text-white absolute bottom-5 left-5 right-5">BUMN Award 2009, Indonesia</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 bg-white mb-8 divide-x divide-gray-200 rounded-xl shadow-lg">
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num " data-val="12300">00000</span> Billion+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center"> PO Values/Year</p>
-                        </div>
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num" data-val="8000">0000</span>+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center">Users</p>
-                        </div>
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num" data-val="20000">000000</span> +
-                            </p>
-                            <p class="text-sm sm:text-base! text-center">Eligible Vendors</p>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-3 bg-white mb-8 divide-x divide-gray-200 rounded-xl shadow-lg">
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num" data-val="25000">000000</span>+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center">PO / Year </p>
-                        </div>
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num" data-val="210000">0000000</span>+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center">Transaction / Year </p>
-                        </div>
-                        <div class="flex flex-col justify-center p-5 overflow-hidden">
-                            <p class="mb-2 text-xl sm:text-3xl! text-center font-extrabold text-yellow-400 text-wrap">
-                                <span class="num" data-val="2000">0000</span>+
-                            </p>
-                            <p class="text-sm sm:text-base! text-center"> Procurement Points </p>
-                        </div>
+                    <div id="award-controls" class="flex justify-center items-center w-full">
+                        <button class="award-prev flex justify-center items-center absolute left-0 top-1/2 ">
+                            <svg class="w-4 h-4 -ml-[2px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 8 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13" />
+                            </svg>
+                        </button>
+                        <button class="award-next flex justify-center items-center absolute right-0 top-1/2 ">
+                            <svg class="w-4 h-4 -mr-[2px] text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 8 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="features" data-section="features" class="feature2 py-12">
-            <div class="w-full max-w-screen-xl mx-auto flex flex-col items-center px-4 sm:px-0">
-                <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mb-8 text-center">
-                    Value-Added Solutions from iProc
-                </h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-                    <div class="card bg-white p-6 rounded-lg shadow-md text-left">
-                        <img src="lib/img/icon/1.svg" alt="feature icon" class="mb-4 w-8 h-8 sm:w-12 sm:h-12">
-                        <p class="text-base sm:text-lg font-bold text-gray-900">
-                            Cost and Time Savings
-                        </p>
-                        <p class="text-sm sm:text-base! text-gray-600 mt-2">
-                            With various features integrated into one platform, iProc can accelerate the procurement
-                            workflow and help
-                            companies make strategic decisions based on accurate data to identify better cost-saving
-                            opportunities.
-                        </p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-lg shadow-md text-left">
-                        <img src="lib/img/icon/2.svg" alt="feature icon" class="mb-4 w-8 h-8 sm:w-12 sm:h-12">
-                        <p class="text-base sm:text-lg font-bold text-gray-900">
-                            The Core Infrastructure for Procurement 4.0
-                        </p>
-                        <p class="text-sm sm:text-base! text-gray-600 mt-2">
-                            iProc supports your journey towards Procurement 4.0, where every strategic and operational
-                            decision is
-                            made
-                            based on in-depth data analysis, creating efficiency, effectiveness, and sustainable
-                            competitive
-                            advantage.
-                        </p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-lg shadow-md text-left">
-                        <img src="lib/img/icon/3.svg" alt="feature icon" class="mb-4 w-8 h-8 sm:w-12 sm:h-12">
-                        <p class="text-base sm:text-lg font-bold text-gray-900">
-                            Real-Time Visibility
-                        </p>
-                        <p class="text-sm sm:text-base! text-gray-600 mt-2">
-                            iProc allows you to track and monitor every step of your procurement workflow in real-time,
-                            enabling you
-                            to
-                            identify spending trends, evaluate supplier effectiveness, and make strategic adjustments as
-                            needed.
-                        </p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-lg shadow-md text-left">
-                        <img src="lib/img/icon/4.svg" alt="feature icon" class="mb-4 w-8 h-8 sm:w-12 sm:h-12">
-                        <p class="text-base sm:text-lg font-bold text-gray-900">
-                            Centralized Data and Documentation
-                        </p>
-                        <p class="text-sm sm:text-base! text-gray-600 mt-2">
-                            Our platform serves as a centralized hub that stores all procurement-related data and
-                            documents.
-                            You can
-                            easily retrieve and access important information, ensuring accuracy, compliance, and more
-                            efficient audit
-                            processes.
-                        </p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-lg shadow-md text-left">
-                        <img src="lib/img/icon/5.svg" alt="feature icon" class="mb-4 w-8 h-8 sm:w-12 sm:h-12">
-                        <p class="text-base sm:text-lg font-bold text-gray-900">
-                            Strategic Procurement
-                        </p>
-                        <p class="text-sm sm:text-base! text-gray-600 mt-2">
-                            With iProc, the procurement function is no longer just an administrative task, but an
-                            essential
-                            part of
-                            the
-                            business strategy to drive growth and innovation.
-                        </p>
-                    </div>
-
-                    <div class="card bg-white p-6 rounded-lg shadow-md text-left">
-                        <img src="lib/img/icon/6.svg" alt="feature icon" class="mb-4 w-8 h-8 sm:w-12 sm:h-12">
-                        <p class="text-base sm:text-lg font-bold text-gray-900">
-                            Applying GRC (Governance, Risk, and Compliance Principles)
-                        </p>
-                        <p class="text-sm sm:text-base! text-gray-600 mt-2">
-                            iProc helps ensure compliance with rules and regulations, risk management, and the
-                            maintenance
-                            of good
-                            governance in the procurement process.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="technology" data-section="technology" class="w-full py-12">
-            <div class="max-w-screen-xl mx-auto px-4 sm:px-0">
-                <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mb-8 text-center">Our Key Capabilities</h2>
-                <div class="flex flex-wrap justify-center gap-2">
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-white rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-1" style="background-color: #005DB5;">
-                        Commodity Management
-                    </button>
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-2">
-                        Vendor Management
-                    </button>
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-3">
-                        Smart Purchasing
-                    </button>
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-4">
-                        Smart Sourcing
-                    </button>
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-5">
-                        Smart Contract
-                    </button>
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-6">
-                        Smart Invoice & Payment
-                    </button>
-                    <button
-                        class="tab-button px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 cursor-pointer"
-                        data-tab-target="tab-7">
-                        Analytics
-                    </button>
-                </div>
-                <div class="mt-10 " style="background-color: #F9FAFB; padding: 10px;">
-                    <div id="tab-1" class="tab-content ">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="img-commodity justify-center">
-                                <img src="lib/img/event-schedule/Commodity Management.svg"
-                                    alt="Commodity Management Illustration" style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <h3 class="text-xl sm:text-3xl! font-bold text-gray-900">Commodity Management</h3>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    Grouping, data collection, and commodity analysis enable more informed and strategic
-                                    decision-making,
-                                    supporting procurement optimization and cost savings.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-content hidden">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="w-full">
-                                <img src="lib/img/event-schedule/Vendor Management.svg"
-                                    alt="Commodity Management Illustration" style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <h3 class="text-xl sm:text-3xl! font-bold text-gray-900">Vendor Vanagement</h3>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    Manage the entire vendor management cycle, from onboarding to performance
-                                    tracking—all within one
-                                    platform..
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-3" class="tab-content hidden">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="lib/img/event-schedule/Smart Purchasing.svg"
-                                    alt="Vendor Management Illustration" class="w-full "
-                                    style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <h3 class="text-xl sm:text-3xl! font-bold text-gray-900">Smart Purchasing</h3>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    This feature facilitates efficient operational/tactical procurement through access
-                                    to Private
-                                    Catalogues and Public Catalogues, providing ease in acquiring the goods and services
-                                    needed.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-4" class="tab-content hidden">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="lib/img/event-schedule/Smart Sourching.svg"
-                                    alt="Commodity Management Illustration" class="w-full "
-                                    style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <p class="text-xl sm:text-3xl! font-bold text-gray-900">Smart Sourching</p>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    iProc simplifies strategic procurement management processes, from procurement
-                                    strategy planning and
-                                    preparation to execution, ensuring best-value sourcing is achieved..
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-5" class="tab-content hidden">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="lib/img/event-schedule/Smart Contract.svg"
-                                    alt="Commodity Management Illustration" style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <p class="text-xl sm:text-3xl! font-bold text-gray-900">Smart Contract</p>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    The entire contract management process—from drafting, execution, monitoring,
-                                    evaluation, to
-                                    closure—can be managed efficiently with this feature. Additionally, e-Sign and
-                                    e-Stamp features make
-                                    contract management even more practical.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-6" class="tab-content hidden">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="lib/img/event-schedule/Smart Invoce & Payment.svg"
-                                    alt="Commodity Management Illustration" class="w-full "
-                                    style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <p class="text-xl sm:text-3xl! font-bold text-gray-900">Smart Invoice & Payment</p>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    This feature allows companies to monitor invoice and payment status in real-time
-                                    with an integrated
-                                    three-way matching system.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-7" class="tab-content hidden">
-                        <div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6">
-                            <div class="w-full lg:w-1/2">
-                                <img src="lib/img/event-schedule/Report.svg" alt="Commodity Management Illustration"
-                                    class="w-full " style="width: 700px; height: auto;" />
-                            </div>
-                            <div class="content-tab w-full lg:w-1/2">
-                                <h3 class="text-xl sm:text-3xl! font-bold text-gray-900">iProc Analytics</h3>
-                                <p class="text-sm sm:text-base! mt-4 text-gray-600">
-                                    Access the data you need with comprehensive reporting and analytics
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="procurement w-full flex py-12">
-            <div class="flex flex-col items-center justify-center max-w-screen-xl mx-auto">
-                <div class="flex mb-8 gap-4">
-                    <p class="text-2xl sm:text-4xl! font-bold text-gray-900 ">
-                        iProc:
-                        Leading the Way into <br> with
-                        Intelligent Automation.</p>
-                    <img src="lib/img/logo-proc4 2.svg" alt="iProc Logo" class="w-24 md:w-32 lg:w-32">
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 px-4 sm:px-0 gap-8">
-                    <img src="lib/img/Picture11.svg" alt="Image 1" class="img-pro mx-auto w-2/3 sm:w-full">
-                    <img src="lib/img/Picture12.svg" alt="Image 2" class="img-pro mx-auto w-2/3 sm:w-full ">
-                </div>
-            </div>
-        </section>
-        <section id="customer-story" data-section="customer-story" class="testimonial py-12">
-            <div class="max-w-screen-xl mx-auto px-4 sm:px-0">
-                <h2 class="text-2xl sm:text-4xl! font-bold text-white text-center">Proven Track Record</h2>
-                <p class="text-sm sm:text-base! text-center text-gray-200 mb-8">(Hear it From Our Clients)</p>
-                <div class="flex flex-col lg:flex-row sm:max-w-9/12 mx-auto gap-4">
-                    <!-- User List -->
-                    <div class="w-full lg:w-1/3">
-                        <ul id="userList" class="space-y-4">
-                            <li>
-                                <button
-                                    class="flex items-center mx-auto sm:mx-0 space-x-3 p-3 w-80 text-left hover:bg-[#ffffff10] rounded-lg transition cursor-pointer"
-                                    onclick="updateTestimonial('Gilang Ramadhan', 'Expert Associate SCM, BSM, PMO Holding Infrastructure, PMO Subholding Infrastructure - PT Wijaya Karya (Persero)', 'It was a great experience!', 'Penerapan aplikasi iProc merupakan bagian dari strategi WIKA dalam mengimplementasikan konsep Procurement 4.0. Aplikasi iProc berhasil  mempercepat proses pengadaan hingga 62% , menghasilkan penghematan sebesar 273 miliar dalam tiga tahun, serta meningkatkan produktivitas organisasi pengadaan (lean organization) dalam mengelola pengadaan dan kontrak senilai Rp 6,4 triliun dengan hanya 14 personel.')">
-                                    <img src="lib/img/avatar/gilang.min.png" alt="Gilang Ramadhan"
-                                        class="w-10 h-10 rounded-full">
-                                    <div>
-                                        <p class="text-sm sm:text-base! font-bold text-white">Gilang Ramadhan</p>
-                                        <p class="text-xs sm:text-sm text-gray-200">Expert Associate SCM, BSM, PMO
-                                            Holding
-                                            Infrastructure, PMO
-                                            Subholding Infrastructure - <b>PT Wijaya Karya (Persero)</b></p>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    class="flex items-center mx-auto sm:mx-0 space-x-3 p-3 w-80 text-left hover:bg-[#ffffff10] rounded-lg transition cursor-pointer"
-                                    onclick="updateTestimonial('Eddy Prastiyo', 'Vice President of Procurement - PT Pembangunan Jaya Ancol (Persero) Tbk', 'Amazing', 'Implementasi Aplikasi iProc di PT Pembangunan Jaya Ancol telah mengalami transformasi sejak 2014, dimulai dengan fitur dasar yang sederhana dan berkembang secara bertahap hingga mencakup kontrak elektronik. Pada tahun 2019, lebih dari 2.000 paket pengadaan yang dikelola menghasilkan efisiensi lebih dari 12%')">
-                                    <img src="lib/img/avatar/eddy.min.png" alt="Eddy Prastiyo"
-                                        class="w-10 h-10 rounded-full">
-                                    <div>
-                                        <p class="text-sm sm:text-base! font-bold text-white">Eddy Prastiyo</p>
-                                        <p class="text-xs sm:text-sm text-gray-200">Vice President of Procurement -
-                                            <b>PT
-                                                Pembangunan Jaya Ancol
-                                                (Persero) Tbk</b>
-                                        </p>
-                                    </div>
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    class="flex items-center mx-auto sm:mx-0 space-x-3 p-3 w-80 text-left hover:bg-[#ffffff10] rounded-lg transition cursor-pointer"
-                                    onclick="updateTestimonial('M. Jamil', 'Director of Commerce - PT Bukit Asam (Persero) Director of Finance - PT Semen Baturaja (Persero) Tbk', 'Highly recommend!', 'PT Bukit Asam berhasil mencapai efisiensi lebih dari Rp 700 miliar hanya dalam tahun pertama implementasi aplikasi iProc, berkat transparansi informasi pengadaan dan kemudahan bagi vendor dalam mengikuti proses pengadaan. Sementara itu, aplikasi iProc di PT Semen Baturaja telah terintegrasi dengan sistem ERP (SAP) dan dilengkapi dengan fitur penilaian vendor yang komprehensif.')">
-                                    <img src="lib/img/avatar/jamil.min.png" alt="M. Jamil"
-                                        class="w-10 h-10 rounded-full">
-                                    <div>
-                                        <p class="text-sm sm:text-base! font-bold text-white">M. Jamil</p>
-                                        <p class="text-xs sm:text-sm text-gray-200">Director of Commerce - <b> PT Bukit
-                                                Asam
-                                                (Persero)</b> Director
-                                            of
-                                            Finance - <b> PT Semen Baturaja (Persero) Tbk</b></p>
-                                    </div>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Testimonial Content -->
-                    <div class="w-full lg:w-2/3 flex flex-col items-start lg:items-center">
-                        <svg class="w-8 h-8 text-yellow-300  mb-4" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 18 14">
-                            <path
-                                d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-                        </svg>
-                        <blockquote id="testimonialBlock" class="text-left lg:text-center">
-                            <p class="text-sm sm:text-base! text-gray-200" id="testimonialContent"></p>
-                            <div class="mt-6">
-                                <p class="text-sm sm:text-base! text-gray-200 font-medium" id="testimonialName"></p>
-                                <p class="text-xs sm:text-sm text-gray-200 " id="testimonialPosition"></p>
-                            </div>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="iproc-feature-2 py-12">
-            <div class="max-w-screen-xl mx-auto px-4 sm:px-0 text-center">
-                <div class="grid gap-4 md:gap-8 grid-cols-1 md:grid-cols-2 items-stretch">
-                    <div
-                        class="bg-white p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-between text-center">
-                        <div>
-                            <img src="lib/img/Iproc 2 go.svg" alt="iProc 2 Go Logo" class="mx-auto mb-4 "
-                                style="width: 65px;">
-                            <p class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mt-4">iProc 2 Go!</p>
-
-                            <ul class="mt-6 space-y-3 text-sm sm:text-base! text-gray-700 text-left">
-                                <li class="flex items-start space-x-2">
-                                    <span>Mempermudah proses persetujuan Purchase Requisition (PR), barang, vendor, dan
-                                        Request for
-                                        Quotation (RFQ) langsung dari smartphone Anda.</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <span>Mendukung proses Purchase-to-Pay (P2P) melalui eCatalogue secara praktis dan
-                                        fleksibel.</span>
-                                </li>
-                                <li class="flex items-start space-x-2">
-                                    <span>Dilengkapi dengan antarmuka yang ramah pengguna untuk proses pengadaan yang
-                                        lebih
-                                        efisien.</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="" class="mt-6">
-                            <button
-                                class="text-sm sm:text-base! text-white font-semibold px-6 py-2 rounded-lg w-full hover:bg-blue-700 cursor-pointer"
-                                style="background-color: #005DB5;">
-                                Click Here for More Information!
-                            </button>
-                        </a>
-                    </div>
-                    <div class="p-8 rounded-lg text-white shadow-lg flex flex-col justify-between text-center"
-                        style="background-color: #005DB5;">
-                        <div>
-                            <img src="lib/img/Iproc cloud.svg" alt="iProc Cloud Logo" class="mx-auto mb-4"
-                                style="width: 120px;">
-                            <p class="text-2xl sm:text-4xl! font-extrabold mt-4">iProc Cloud</p>
-
-                            <ul class="mt-6 space-y-3 text-sm sm:text-base! text-left">
-                                <li class="flex items-start space-x-2">
-                                    <span>Implementasi eProcurement berbasis cloud yang mendukung kebutuhan organisasi
-                                        yang terus
-                                        berkembang dan berubah tanpa perlu investasi infrastruktur tambahan.</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <a href="" class="mt-6">
-                            <button
-                                class="text-sm sm:text-base! bg-white font-semibold px-6 py-2 rounded-lg w-full hover:bg-gray-200 cursor-pointer"
-                                style="color: #005DB5;">
-                                Click Here for More Information!
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="industries" data-section="industries" class="sector py-12">
-            <div class="max-w-screen-xl mx-auto">
-                <div class="text-center mb-8">
-                    <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900">iProc serves clients across diverse
-                        industry sectors,
-                    </h2>
-                    <p class="text-sm sm:text-base! text-gray-500 mt-2">demonstrating its versatility and ability to meet
-                        the unique
-                        procurement
-                        needs
-                        of
-                        each industry.</p>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 justify-center items-center">
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/Energy & Mining.svg" alt="Energy & Mining" class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Energy & Mining</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/Oil & Gas.svg" alt="Oil & Gas" class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Oil & Gas</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/Pharmateutical.svg" alt="Pharmaceutical" class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Pharmaceutical</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/EPC Telecommunication.svg" alt="EPC Telecommunication"
-                            class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">EPC Telecommunication</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/Transportation.svg" alt="Transportation" class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Transportation</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/Financial Services.svg" alt="Financial Services"
-                            class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Financial Services</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-l text-white">
-                        <img src="lib/img/img-sector/Public Sector.svg" alt="Public Sector" class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Public Sector</p>
-                        </div>
-                    </div>
-                    <div class="relative overflow-hidden rounded-lg text-white">
-                        <img src="lib/img/img-sector/Entertaiment.svg" alt="Entertainment" class="w-full h-full">
-                        <div class="absolute bottom-[8%] left-[8%] right-2.5">
-                            <p class="text-sm sm:text-lg font-semibold text-wrap">Entertainment</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="blog" data-section="blog" class="award py-12">
-            <div class="max-w-screen-xl mx-auto p-4">
-                <div class="text-center">
-                    <p class="text-2xl sm:text-4xl! font-bold text-gray-900">Award</p>
-                    <p class="text-sm sm:text-base! text-gray-600">
-                        iProc is a procurement platform that streamlines sourcing, <br>
-                        vendor management, and procurement for greater efficiency and transparency.
-                    </p>
-                </div>
-                <div class="flex flex-col grow lg:flex-row justify-center items-center mt-8 gap-8">
-                    <div class="my-auto w-[380px] max-w-full lg:max-w-[300px] order-2 lg:order-1">
-                        <div class="p-6 rounded-lg shadow-lg w-full">
-                            <span class="font-bold text-sm sm:text-base!">
-                                <i class="fa-solid fa-newspaper" style="color: #1e429f;"></i> Award
-                            </span>
-                            <p class="text-sm sm:text-base! text-gray-900">International APICTA 2010 Awards, Malaysia
-                            </p>
-                        </div>
-                    </div>
-                    <div class="text-center order-1 lg:order-2 w-48">
-                        <img src="lib/img/trophy.svg" alt="Trophy Icon" class="w-48 h-48 mx-auto">
-                    </div>
-                    <div class="my-auto w-[380px] max-w-full lg:max-w-[300px] order-3">
-                        <div class="p-6 rounded-lg shadow-lg w-full">
-                            <span class="font-bold text-sm sm:text-base!">
-                                <i class="fa-solid fa-newspaper" style="color: #1e429f;"></i> Award
-                            </span>
-                            <p class="text-sm sm:text-base! text-gray-900">BUMN Award 2009, Indonesia</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="pro-transform py-12">
-            <div class="max-w-screen-xl mx-auto flex flex-col items-center justify-center text-center space-y-8">
-                <p class="text-2xl sm:text-4xl! font-bold text-white" style="text-shadow: 2px 2px 5px black; ;">
-                    Ready to
-                    Transform your Procurement?</p>
+        <section class="bottom pt-20 px-4 relative overflow-hidden mb-20">
+            <div class="max-w-screen-2xl mx-auto text-center p-15 rounded-4xl">
+                <p class="text-2xl sm:text-5xl! font-extrabold mx-auto text-white mb-8 max-w-2/3">
+                    Ready to Transform your Procurement?
+                </p>
                 <a href="https://wa.me/08129402205">
                     <button
-                        class="text-white whitespace-nowrap flex items-center hover:text-blue-800 hover:bg-white focus:ring-8 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center border-2 border-white cursor-pointer">
-                        <p class="text-sm sm:text-base!">Contact us</p>
-                        <svg class="w-5 h-5 inline-block ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        class="bg-white inline-flex gap-2 text-[#005bd5] hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center cursor-pointer mb-5">
+                        <svg class="w-6 h-6 text-[#005db5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
                         </svg>
+                        Contact Us
                     </button>
                 </a>
             </div>
         </section>
-        <footer class="pb-4 pt-8 px-6 text-white bg-[#005db5]">
-            <div class="max-w-screen-xl mx-auto">
-                <div class="grid gap-8 md:grid-cols-4">
-                    <div class="flex flex-col space-y-4">
-                        <a href="index.html">
-                            <img src="lib/img/iproc-white.svg" alt="IProc Logo" class="w-20 sm:w-32">
-                        </a>
-                        <p class="text-sm sm:text-base!">An innovative and reliable eProcurement solution designed to help enhance
-                            efficiency at
-                            every stage of your procurement process. </p>
+    </main>
+    <footer class="px-10 pt-20 pb-10 bg-[#005db5] text-white">
+        <div class="max-w-screen-2xl mx-auto p-2">
+            <div class="w-full grid grid-cols-12 gap-2 sm:gap-10 ">
+                <div class="col-span-6 md:col-span-4!">
+                    <img src="./lib/img/iproc-white.svg" class="w-30 mb-5" alt="iProc Logo">
+                    <p class="text-sm sm:text-base! mb-5">Kapan saja dan di mana saja, akses beberapa fitur iProc kini
+                        semakin mudah dengan iProc 2GO, aplikasi iProc di mobile phone Anda.</p>
+                    <h3 class="text-base sm:text-lg font-bold mb-5">Certified & Registered</h3>
+                    <img src="./lib/img/iproc-2-go/certified-registered.png" class="w-full" alt="Certified Registered">
+                </div>
+                <div class="col-span-6 md:col-span-4!">
+                    <h3 class="text-base sm:text-lg font-bold mb-5">REACH US</h3>
+                    <div class="flex gap-4 mb-5">
+                        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span>
+                            District 8 – Treasury Tower. SCBD Lot 28,11th floor, Unit 11-K, Jl. Jend Sudirman Kav 52 –
+                            54,
+                            Jakarta 12190, INDONESIA</span>
                     </div>
-                    <div class="flex flex-col space-y-4">
-                        <p class="text-sm sm:text-base! font-bold uppercase ">Certified and Registered</p>
-                        <img src="lib/img/iso9001 verification.png" alt="Certification Logos" class="w-48">
+                    <p class="text-base sm:text-lg font-bold mb-5">Rani Eka</p>
+                    <div class="flex gap-4 mb-5">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
+                            <path
+                                d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
+                        </svg>
+                        <a href="mailto:rani@adw.co.id">rani@adw.co.id</a>
                     </div>
-                    <div class="flex flex-col space-y-4">
-                        <h2 class="text-sm sm:text-base! font-bold uppercase">Contact Us</h2>
-                        <ul class="space-y-4">
-                            <li>
-                                <a href="https://wa.me/08129402205" class="text-sm sm:text-base! flex items-center gap-2 hover:underline">
-                                    <i class="fa-solid fa-phone" aria-hidden="true"></i> 08129402205
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:katri@adw.co.id" class="text-sm sm:text-base! flex items-center gap-2 hover:underline">
-                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> katri@adw.co.id
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="flex flex-col space-y-4">
-                        <h2 class="text-sm sm:text-base! font-bold uppercase">Address</h2>
-                        <p class="text-sm sm:text-base!"> District 8 – Treasury Tower. SCBD Lot 28, K Jl. Jend. Sudirman kav 52-53
-                            No.11
-                            11th
-                            floor, Unit, Daerah Khusus Ibukota Jakarta 12190</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.269447373922!2d106.80391157506979!3d-6.228163060995156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ea05a27367%3A0xe60af13ee852c9e9!2sADW%20Consulting%20-%20Treasury%20Tower%20(D8)!5e0!3m2!1sid!2sid!4v1730622827395!5m2!1sid!2sid"
-                            width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="flex gap-4 mb-5">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
+                        </svg>
+                        <a href="http://wa.me/6281315870596">+62 813‑1587‑0596</a>
                     </div>
 
                 </div>
-                <hr class="border-t border-white my-4 mx-auto">
-                <div class="flex justify-between items-center flex-col md:flex-row mt-0  text-center text-gray-200">
-                    <span class="text-sm">
-                        Copyright © 2024 All rights reserved - IProc ADW ID
-                    </span>
-                    <div class="mt-4 md:mt-0 flex gap-2">
-                        <a href="https://www.facebook.com/people/Adw-Consulting/100092521594522/"
-                            class="text-white hover:text-gray-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/@adwconsulting6136/featured"
-                            class="text-white hover:text-gray-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="https://id.linkedin.com/company/anggada-duta-wisesa-pt?original_referer=https%3A%2F%2Fwww.google.com%2F"
-                            class="text-white hover:text-gray-300">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
-                                    clip-rule="evenodd"></path>
-                                <path d="M7.2 8.809H4V19.5h3.2V8.809Z"></path>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/adw.consulting/%20/#" class="text-white hover:text-gray-300">
-                            <svg class="w-5 h-5" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                viewBox="0 0 24 24">
-                                <path fill="currentColor" fill-rule="evenodd"
-                                    d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="col-span-12 md:col-span-4!">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2694070869316!2d106.80391157597964!3d-6.228168393759932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ea05a27367%3A0xe60af13ee852c9e9!2sADW%20Consulting%20-%20Treasury%20Tower%20(D8)!5e0!3m2!1sid!2sid!4v1745235500852!5m2!1sid!2sid"
+                        style="border:0;" allowfullscreen="" class="w-full aspect-[3/2] rounded-xl" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </footer>
-    </main>
-    
+            <hr class="border-white my-10">
+            <div class="flex flex-col sm:flex-row justify-between gap-4">
+                <span class="text-sm sm:text-base text-center sm:text-left!">Copyright © 2024 All rights reserved -
+                    IProc ADW ID | Terms &
+                    Conditions</span>
+                <div class="flex justify-center gap-4">
+                    <a href="https://www.youtube.com/@adwconsulting6136"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="https://id.linkedin.com/company/anggada-duta-wisesa-pt"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                clip-rule="evenodd" />
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/adw_consulting"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/ADWConsulting/"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="lib/js/navlink.js"></script>
     <script src="lib/js/navbar.js"></script>
