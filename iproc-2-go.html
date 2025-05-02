@@ -45,7 +45,7 @@
     data-gr-ext-installed="" cz-shortcut-listen="true">
 
     <nav id="navbar" class="px-4 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl w-full">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl w-full">
             <div class="p-2 mr-5">
                 <a href="#" class="">
                     <img src="lib/img/Iproc.png" alt="iProc">
@@ -112,19 +112,19 @@
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="menu">
                 <ul class="navbar-nav nav flex flex-col mt-4 font-medium lg:flex-row lg:space-x-2 lg:mt-0">
                     <li class="nav-item">
-                        <a href="index.html#home"
+                        <a href="iproc-2-go.html" id="home-link"
                             class="nav-link text-base block text-[#005db5] hover:bg-blue-100 w-full py-1.5 px-3 rounded active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#about-us"
+                        <a href="iproc-2-go.html#problem" id="problem-link"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Problem</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#features"
+                        <a href="iproc-2-go.html#solution" id="solution-link"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#technology"
+                        <a href="iproc-2-go.html#contact" id="contact-link"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Contact</a>
                     </li>
                 </ul>
@@ -133,9 +133,9 @@
     </nav>
 
     <main>
-        <section class="hero pt-20 overflow-hidden">
-            <div class="max-w-screen-xl mx-auto px-4 md:px-0 grid grid-cols-1 sm:grid-cols-12! gap-4 items-center">
-                <div class="col-span-8">
+        <section class="hero pt-40 overflow-hidden">
+            <div class="max-w-screen-2xl mx-auto px-4 md:px-0 grid grid-cols-1 sm:grid-cols-12! gap-4 items-center">
+                <div class="col-span-6">
                     <img class="mb-4 mx-auto sm:mx-0 w-1/5" src="lib/img/iproc-2-go/iproc-2-go.svg"
                         alt="iProc 2 Go Logo" />
                     <h1
@@ -176,11 +176,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-span-4 cloud-content flex justify-center">
+                <div class="col-span-6 cloud-content flex justify-center">
                     <div class="inline-block relative illustration -bottom-20" data-aos="zoom-in-left"
                         data-aos-duration="800">
                         <img src="lib/img/iproc-2-go/Image & Reviews.png" alt="2go Illustration"
-                            class="w-full max-w-md relative z-20" />
+                            class="w-full relative z-20" />
                     </div>
                 </div>
             </div>
@@ -188,15 +188,34 @@
 
             </div>
         </section>
-        <section class="problem py-14">
-            <div class="max-w-screen-xl mx-auto px-4 sm:px-0 text-center">
+        <section id="problem" class="problem py-20">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-0 text-center">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-12 w-3/5 mx-auto">
                     Sebagai pelaku pengadaan, pernahkah Anda merasakan hal-hal berikut ini:
                 </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="800">
-                        <div class="rounded-xl aspect-[7/6] flex align-bottom overflow-hidden mb-2 bg-blue-400 w-full">
+                        <div class="rounded-xl aspect-[7/6] flex align-bottom overflow-hidden mb-2 bg-[#48ACE1] w-full">
                             <img src="lib/img/iproc-2-go/problem-1.png" class="mx-auto" alt="Problem 1" />
+                        </div>
+                        <div class="flex gap-4 items-start p-5">
+                            <span class="bg-red-100 p-2 rounded-md">
+                                <svg class="w-6 h-6 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm7.707-3.707a1 1 0 0 0-1.414 1.414L10.586 12l-2.293 2.293a1 1 0 1 0 1.414 1.414L12 13.414l2.293 2.293a1 1 0 0 0 1.414-1.414L13.414 12l2.293-2.293a1 1 0 0 0-1.414-1.414L12 10.586 9.707 8.293Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p class="text-gray-700 text-left text-sm sm:text-xl font-bold">
+                                Butuh untuk segera memproses Request for Quotation (RFQ)?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="800"
+                        data-aos-delay="50">
+                        <div class="rounded-xl aspect-[7/6] flex align-bottom overflow-hidden mb-2 bg-[#F05252] w-full">
+                            <img src="lib/img/iproc-2-go/problem-2.png" class="mx-auto" alt="Problem 2" />
                         </div>
                         <div class="flex gap-4 items-start p-5">
                             <span class="bg-red-100 p-2 rounded-md">
@@ -213,9 +232,9 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="800"
-                        data-aos-delay="50">
-                        <div class="rounded-xl aspect-[7/6] flex align-bottom overflow-hidden mb-2 bg-red-400 w-full">
-                            <img src="lib/img/iproc-2-go/problem-2.png" class="mx-auto" alt="Problem 2" />
+                        data-aos-delay="100">
+                        <div class="rounded-xl aspect-[7/6] flex align-bottom overflow-hidden mb-2 bg-[#FFBC50] w-full">
+                            <img src="lib/img/iproc-2-go/problem-3.png" class="mx-auto" alt="Problem 3" />
                         </div>
                         <div class="flex gap-4 items-start p-5">
                             <span class="bg-red-100 p-2 rounded-md">
@@ -231,31 +250,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col items-center" data-aos="fade-down" data-aos-duration="800"
-                        data-aos-delay="100">
-                        <div
-                            class="rounded-xl aspect-[7/6] flex align-bottom overflow-hidden mb-2 bg-yellow-400 w-full">
-                            <img src="lib/img/iproc-2-go/problem-3.png" class="mx-auto" alt="Problem 3" />
-                        </div>
-                        <div class="flex gap-4 items-start p-5">
-                            <span class="bg-red-100 p-2 rounded-md">
-                                <svg class="w-6 h-6 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd"
-                                        d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm7.707-3.707a1 1 0 0 0-1.414 1.414L10.586 12l-2.293 2.293a1 1 0 1 0 1.414 1.414L12 13.414l2.293 2.293a1 1 0 0 0 1.414-1.414L13.414 12l2.293-2.293a1 1 0 0 0-1.414-1.414L12 10.586 9.707 8.293Z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                            <p class="text-gray-700 text-left text-sm sm:text-xl font-bold">
-                                Proses approval tertunda karena hanya bisa mengakses e-Procurement lewat laptop?
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <section class="solve py-20">
-            <div class="max-w-screen-xl mx-auto px-4 sm:px-0">
+        <section id="solution" class="solve py-20">
+            <div class="max-w-screen-2xl mx-auto px-4 sm:px-0">
                 <img src="./lib/img/iproc-2-go/iproc-2-go.svg" class="mx-auto w-30 mb-2" alt="iProc 2GO Logo">
                 <h2 class="text-2xl sm:text-4xl! text-center font-bold text-gray-900 mb-2">
                     iProc 2 Go Solusinya!
@@ -365,8 +364,8 @@
                 </div>
             </div>
         </section>
-        <section class="bottom pt-20 relative overflow-hidden mb-20">
-            <div class="max-w-screen-xl mx-auto text-left p-15 rounded-4xl relative pr-[30%]">
+        <section id="contact" class="bottom pt-20 relative overflow-hidden mb-20">
+            <div class="max-w-screen-2xl mx-auto text-left p-15 rounded-4xl relative pr-[30%]">
                 <p class="text-2xl sm:text-4xl! font-bold text-white mb-5">
                     Proses lebih cepat, efisien, dan fleksibel di mana saja dan kapan saja!
                 </p>
@@ -389,7 +388,7 @@
                     *hanya fitur-fitur tertentu dari iProc yang dapat
                     dikelola melalui iProc 2 Go
                 </p>
-                <img src="./lib/img/iproc-2-go/phone.png" class="absolute bottom-0 right-8 w-1/4" alt="iProc Phone"
+                <img src="./lib/img/iproc-2-go/phone.png" class="absolute -top-20 right-8 w-1/4" alt="iProc Phone"
                     data-aos="fade-up" data-aos-duration="800">
             </div>
         </section>
@@ -407,14 +406,15 @@
                 <div class="col-span-6 md:col-span-4!">
                     <h3 class="text-base sm:text-lg font-bold mb-5">REACH US</h3>
                     <div class="flex gap-4 mb-5">
-                        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
                                 clip-rule="evenodd" />
                         </svg>
                         <span>
-                            District 8 – Treasury Tower. SCBD Lot 28,11th floor, Unit 11-K, Jl. Jend Sudirman Kav 52 – 54,
+                            District 8 – Treasury Tower. SCBD Lot 28,11th floor, Unit 11-K, Jl. Jend Sudirman Kav 52 –
+                            54,
                             Jakarta 12190, INDONESIA</span>
                     </div>
                     <p class="text-base sm:text-lg font-bold mb-5">Rani Eka</p>
@@ -436,7 +436,7 @@
                         </svg>
                         <a href="http://wa.me/6281315870596">+62 813‑1587‑0596</a>
                     </div>
-    
+
                 </div>
                 <div class="col-span-12 md:col-span-4!">
                     <iframe
@@ -447,10 +447,12 @@
             </div>
             <hr class="border-white my-10">
             <div class="flex flex-col sm:flex-row justify-between gap-4">
-                <span class="text-sm sm:text-base text-center sm:text-left!">Copyright © 2024 All rights reserved - IProc ADW ID | Terms &
+                <span class="text-sm sm:text-base text-center sm:text-left!">Copyright © 2024 All rights reserved -
+                    IProc ADW ID | Terms &
                     Conditions</span>
                 <div class="flex justify-center gap-4">
-                    <a href="https://www.youtube.com/@adwconsulting6136" class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                    <a href="https://www.youtube.com/@adwconsulting6136"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
                         <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -468,14 +470,16 @@
                             <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
                         </svg>
                     </a>
-                    <a href="https://x.com/adw_consulting" class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                    <a href="https://x.com/adw_consulting"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
                         <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
                         </svg>
                     </a>
-                    <a href="https://www.facebook.com/ADWConsulting/" class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                    <a href="https://www.facebook.com/ADWConsulting/"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
                         <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -488,22 +492,69 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="lib/js/hidden.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+    <!-- <script src="lib/js/hidden.js"></script> -->
     <script src="lib/js/navlink.js"></script>
-    <script src="lib/js/navbar.js"></script>
-    <script src="lib/js/testimonial.js"></script>
-    <script src="lib/js/slider.js"></script>
+    <!-- <script src="lib/js/navbar.js"></script> -->
+    <!-- <script src="lib/js/testimonial.js"></script> -->
+    <!-- <script src="lib/js/slider.js"></script> -->
     <script src="lib/js/sticky.js"></script>
     <script src="lib/js/hamburger.js"></script>
-    <script src="lib/js/index.js"></script>
-    <script src="lib/js/event-schedule.js"></script>
+    <!-- <script src="lib/js/index.js"></script> -->
+    <!-- <script src="lib/js/event-schedule.js"></script> -->
     <script src="lib/js/flowbite.min.js"></script>
-    <script src="https://kit.fontawesome.com/790e7e3214.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/790e7e3214.js" crossorigin="anonymous"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+
+        document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            const links = {
+                'home': document.getElementById('home-link'),
+                'problem': document.getElementById('problem-link'),
+                'solution': document.getElementById('solution-link'),
+                'contact': document.getElementById('contact-link'),
+            };
+
+            let currentSection = "";
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+
+            //   Menangani klik pada nav item untuk scroll halus
+            document.querySelectorAll('.nav-link').forEach(item => {
+                item.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = item.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+
+
+            navLinks.forEach((link) => {
+                link.classList.remove("text-blue-300", "bg-blue-100");
+                if (link.getAttribute("href") === `#${currentSection}`) {
+                    link.classList.add("text-blue-700", "bg-blue-100");
+                }
+            });
+        });
+
+
     </script>
 
 </body>
