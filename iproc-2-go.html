@@ -32,6 +32,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
     <link rel="stylesheet" href="lib/css/output.css" />
     <link rel="stylesheet" href="lib/css/flowbite.min.css" />
+    <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
     <nav id="navbar" class="px-4 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl w-full">
             <div class="p-2 mr-5">
-                <a href="#" class="">
+                <a href="index.html" class="">
                     <img src="lib/img/Iproc.png" alt="iProc">
                 </a>
             </div>
@@ -89,7 +90,7 @@
                     </div>
                 </div>
 
-                <a class="button-nav" href="https://wa.me/08129402205">
+                <a class="button-nav" href="http://wa.me/6281315870596">
                     <button type="button"
                         class=" hidden bg-primary md:block text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center cursor-pointer">Contact
                         Us</button>
@@ -112,19 +113,19 @@
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="menu">
                 <ul class="navbar-nav nav flex flex-col mt-4 font-medium lg:flex-row lg:space-x-2 lg:mt-0">
                     <li class="nav-item">
-                        <a href="iproc-2-go.html" id="home-link"
-                            class="nav-link text-base block text-[#005db5] hover:bg-blue-100 w-full py-1.5 px-3 rounded active">Home</a>
+                        <a href="#home"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="iproc-2-go.html#problem" id="problem-link"
+                        <a href="#problem"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Problem</a>
                     </li>
                     <li class="nav-item">
-                        <a href="iproc-2-go.html#solution" id="solution-link"
+                        <a href="#solution"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a href="iproc-2-go.html#contact" id="contact-link"
+                        <a href="#contact"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Contact</a>
                     </li>
                 </ul>
@@ -133,7 +134,7 @@
     </nav>
 
     <main>
-        <section class="hero pt-40 overflow-hidden">
+        <section id="home" class="hero pt-40 overflow-hidden">
             <div class="max-w-screen-2xl mx-auto px-4 md:px-0 grid grid-cols-1 sm:grid-cols-12! gap-4 items-center">
                 <div class="col-span-6">
                     <img class="mb-4 mx-auto sm:mx-0 w-1/5" src="lib/img/iproc-2-go/iproc-2-go.svg"
@@ -373,7 +374,7 @@
                     Segera unduh aplikasinya dan rasakan kemudahan mengelola e-Procurement dengan lebih praktis dan
                     efisien! Untuk info cara mengunduh aplikasi dan info lainnya dapat menghubungi kontak berikut.
                 </p>
-                <a href="https://wa.me/08129402205">
+                <a href="http://wa.me/6281315870596">
                     <button
                         class="bg-white inline-flex gap-2 text-[#005bd5] hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center cursor-pointer mb-5">
                         <svg class="w-6 h-6 text-[#005db5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -494,67 +495,12 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
-    <!-- <script src="lib/js/hidden.js"></script> -->
-    <script src="lib/js/navlink.js"></script>
-    <!-- <script src="lib/js/navbar.js"></script> -->
-    <!-- <script src="lib/js/testimonial.js"></script> -->
-    <!-- <script src="lib/js/slider.js"></script> -->
-    <script src="lib/js/sticky.js"></script>
-    <script src="lib/js/hamburger.js"></script>
-    <!-- <script src="lib/js/index.js"></script> -->
-    <!-- <script src="lib/js/event-schedule.js"></script> -->
+    <script src="lib/js/navbar.js"></script>
     <script src="lib/js/flowbite.min.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/790e7e3214.js" crossorigin="anonymous"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
-    </script>
-
-    <script>
-
-        document.addEventListener("scroll", () => {
-            const sections = document.querySelectorAll("section");
-            const navLinks = document.querySelectorAll(".nav-link");
-
-            const links = {
-                'home': document.getElementById('home-link'),
-                'problem': document.getElementById('problem-link'),
-                'solution': document.getElementById('solution-link'),
-                'contact': document.getElementById('contact-link'),
-            };
-
-            let currentSection = "";
-
-            sections.forEach((section) => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.offsetHeight;
-                if (window.scrollY >= sectionTop - sectionHeight / 3) {
-                    currentSection = section.getAttribute("id");
-                }
-            });
-
-            //   Menangani klik pada nav item untuk scroll halus
-            document.querySelectorAll('.nav-link').forEach(item => {
-                item.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const targetId = item.getAttribute('href').substring(1);
-                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-                });
-            });
-
-
-
-            navLinks.forEach((link) => {
-                link.classList.remove("text-blue-300", "bg-blue-100");
-                if (link.getAttribute("href") === `#${currentSection}`) {
-                    link.classList.add("text-blue-700", "bg-blue-100");
-                }
-            });
-        });
-
-
     </script>
 
 </body>

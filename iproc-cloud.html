@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
     <link rel="stylesheet" href="lib/css/output.css" />
     <link rel="stylesheet" href="lib/css/flowbite.min.css" />
+    <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -45,7 +46,7 @@
     <nav id="navbar" class="px-4 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl w-full">
             <div class="p-2 mr-5">
-                <a href="#" class="">
+                <a href="index.html">
                     <img src="lib/img/Iproc.png" alt="iProc">
                 </a>
             </div>
@@ -87,7 +88,7 @@
                     </div>
                 </div>
 
-                <a class="button-nav" href="https://wa.me/08129402205">
+                <a class="button-nav" href="http://wa.me/6281315870596">
                     <button type="button"
                         class=" hidden bg-primary md:block text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-4 py-2 text-center cursor-pointer">Contact
                         Us</button>
@@ -110,27 +111,27 @@
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="menu">
                 <ul class="navbar-nav nav flex flex-col mt-4 font-medium lg:flex-row lg:space-x-2 lg:mt-0">
                     <li class="nav-item">
-                        <a href="index.html#home"
-                            class="nav-link text-base block text-[#005db5] hover:bg-blue-100 w-full py-1.5 px-3 rounded active">Home</a>
+                        <a href="#home"
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#about-us"
+                        <a href="#problem"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Problem</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#features"
+                        <a href="#solution"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#features"
+                        <a href="#features"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Fitur</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#features"
+                        <a href="#perbandingan"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Perbandingan</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#technology"
+                        <a href="#contact"
                             class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Contact</a>
                     </li>
                 </ul>
@@ -138,7 +139,7 @@
         </div>
     </nav>
     <main>
-        <section class="hero pt-20">
+        <section id="home" class="hero pt-20">
             <div class="max-w-screen-2xl mx-auto px-4 md:px-0">
                 <div class="relative -bottom-20">
                     <img class="mb-8 mx-auto w-72" src="lib/img/Iproc cloud.svg" alt="iProc Cloud Logo" />
@@ -152,17 +153,14 @@
                     </p>
                 </div>
                 <div class="cloud-content relative -bottom-36 overflow-hidden">
-                    <img src="lib/img/iproc cloud/hero-illustration.png" alt="Cloud System Illustration"
-                        class="w-full" data-aos="zoom-in-down"
-                        data-aos-duration="800"/>
+                    <img src="lib/img/iproc cloud/hero-illustration.png" alt="Cloud System Illustration" class="w-full"
+                        data-aos="zoom-in-down" data-aos-duration="800" />
                 </div>
 
             </div>
         </section>
-        <div class="py-20 mt-10 bg-[#24A3F2]">
-
-        </div>
-        <section class="solve py-24">
+        <div class="py-20 mt-10 bg-[#24A3F2]"></div>
+        <section id="problem" class="solve py-24">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-0 text-center">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-8">
                     Organisasi Anda sudah mengimplementasikan <br />
@@ -176,20 +174,23 @@
                             pemeliharaan sistem?
                         </p>
                     </div>
-                    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="100">
                         <img src="lib/img/iproc cloud/logo solve 2.svg" class="mb-5" alt="Implementasi Rumit" />
                         <p class="text-gray-800 font-semibold text-center text-sm sm:text-xl">
                             Implementasi sistem terasa rumit dan memakan waktu?
                         </p>
                     </div>
-                    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="200">
                         <img src="lib/img/iproc cloud/logo solve 3.svg" class="mb-5" alt="Akses Terbatas" />
                         <p class="text-gray-800 font-semibold text-center text-sm sm:text-xl">
                             Akses terbatas hanya di jaringan internal, tidak fleksibel
                             untuk tim yang bekerja dari berbagai lokasi?
                         </p>
                     </div>
-                    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="flex flex-col items-center" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="300">
                         <img src="lib/img/iproc cloud/logo solve 4.svg" class="mb-5" alt="Implementasi Lama" />
                         <p class="text-gray-800 font-semibold text-center text-sm sm:text-xl">
                             Implementasi sistem terasa rumit dan memakan waktu?
@@ -198,7 +199,7 @@
                 </div>
             </div>
         </section>
-        <section class="desk py-10 relative overflow-hidden">
+        <section id="solution" class="desk py-10 relative overflow-hidden">
             <div class="max-w-screen-2xl mx-auto flex flex-col items-center sm:flex-row px-4 sm:px-0 gap-8">
                 <div class="content-desk">
                     <h2 class="text-2xl sm:text-4xl! font-bold text-white">
@@ -228,7 +229,8 @@
                             <path d="M47.2729 40.4543H63.182L42.7275 69.9998V49.5452H26.8184L47.2729 19.9998V40.4543Z"
                                 fill="white" />
                         </svg>
-                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Implementasi Mudah & Cepat</h3>
+                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Implementasi Mudah &
+                            Cepat</h3>
                         <ul class="text-gray-500 text-base list-disc list-inside">
                             <li>eProcurement berbasis cloud yang dapat langsung digunakan tanpa investasi infrastruktur
                                 tambahan!</li>
@@ -236,7 +238,8 @@
                                 perlu pelatihan yang rumit.</li>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-center sm:items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="flex flex-col items-center sm:items-start" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="100">
                         <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
                             class="mb-4">
                             <rect y="-0.000244141" width="90" height="90" rx="15" fill="#24A3F2" />
@@ -244,14 +247,16 @@
                                 d="M24.0833 27.9998C20.8659 27.9998 18.25 30.6156 18.25 33.8331V57.1664C18.25 60.3839 20.8659 62.9998 24.0833 62.9998H64.9167C68.1341 62.9998 70.75 60.3839 70.75 57.1664V33.8331C70.75 30.6156 68.1341 27.9998 64.9167 27.9998H24.0833ZM43.0417 39.6664H63.4583C64.2604 39.6664 64.9167 40.3227 64.9167 41.1248C64.9167 41.9268 64.2604 42.5831 63.4583 42.5831H43.0417C42.2396 42.5831 41.5833 41.9268 41.5833 41.1248C41.5833 40.3227 42.2396 39.6664 43.0417 39.6664ZM41.5833 49.8748C41.5833 49.0727 42.2396 48.4164 43.0417 48.4164H63.4583C64.2604 48.4164 64.9167 49.0727 64.9167 49.8748C64.9167 50.6768 64.2604 51.3331 63.4583 51.3331H43.0417C42.2396 51.3331 41.5833 50.6768 41.5833 49.8748ZM33.1979 36.0206V37.2875C33.8815 37.3969 34.5286 37.5518 35.1211 37.7159C36.0964 37.9711 36.6706 38.9737 36.4154 39.949C36.1602 40.9242 35.1576 41.4985 34.1823 41.2432C33.1797 40.9789 32.2135 40.7875 31.3385 40.7693C30.6185 40.7602 29.8802 40.9334 29.3789 41.225C28.9414 41.4802 28.8138 41.7354 28.8138 42.0727C28.8138 42.2367 28.8229 42.3917 29.2969 42.6834C29.8711 43.0297 30.7096 43.294 31.8763 43.6404L31.9401 43.6586C32.9609 43.9685 34.2734 44.3604 35.3216 45.0258C36.4974 45.7641 37.5365 46.9672 37.5638 48.8175C37.5911 50.7224 36.6068 52.1078 35.3034 52.919C34.6471 53.3292 33.918 53.5844 33.1888 53.7393V54.9972C33.1888 55.9998 32.3685 56.8201 31.3659 56.8201C30.3633 56.8201 29.543 55.9998 29.543 54.9972V53.6664C28.6042 53.4659 27.7201 53.1651 26.9727 52.9008C26.7812 52.837 26.599 52.7732 26.4167 52.7094C25.4596 52.3904 24.9492 51.3604 25.2682 50.4034C25.5872 49.4464 26.6172 48.936 27.5742 49.255C27.8021 49.3279 28.0208 49.4099 28.2305 49.4737C29.4701 49.893 30.418 50.212 31.4297 50.2485C32.2135 50.2758 32.9336 50.1026 33.3802 49.8201C33.7539 49.5922 33.9271 49.3188 33.918 48.863C33.918 48.5987 33.8451 48.4073 33.3802 48.1156C32.806 47.7511 31.9766 47.4867 30.8281 47.1404L30.6732 47.0948C29.6797 46.794 28.431 46.4203 27.4284 45.8188C26.2708 45.1169 25.1862 43.9503 25.1771 42.1091C25.168 40.186 26.2526 38.8552 27.5286 38.1078C28.1576 37.7341 28.8503 37.488 29.5521 37.3331V36.057C29.5521 35.0544 30.3724 34.2341 31.375 34.2341C32.3776 34.2341 33.1979 35.0544 33.1979 36.057V36.0206Z"
                                 fill="white" />
                         </svg>
-                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Biaya Investasi & Operasional Rendah</h3>
+                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Biaya Investasi &
+                            Operasional Rendah</h3>
                         <ul class="text-gray-500 text-base list-disc list-inside">
                             <li>eTidak memerlukan biaya besar untuk pembangunan infrastruktur aplikasi eProcurement.
                             </li>
                             <li>Skema biaya dan langganan yang fleksibel sesuai dengan kebutuhan.</li>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-center sm:items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="flex flex-col items-center sm:items-start" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="200">
                         <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
                             class="mb-4">
                             <rect y="-0.000244141" width="90" height="90" rx="15" fill="#24A3F2" />
@@ -259,13 +264,15 @@
                                 d="M40 24.9998H27.1429C25.9554 24.9998 25 25.9551 25 27.1426V39.9998C25 40.8658 25.5179 41.6515 26.3214 41.9819C27.125 42.3123 28.0446 42.1337 28.6607 41.5176L32.2321 37.9462L39.2857 44.9998L32.2321 52.0533L28.6607 48.4819C28.0446 47.8658 27.125 47.6873 26.3214 48.0176C25.5179 48.348 25 49.1337 25 49.9998V62.8569C25 64.0444 25.9554 64.9998 27.1429 64.9998H40C40.8661 64.9998 41.6518 64.4819 41.9821 63.6783C42.3125 62.8748 42.1339 61.9551 41.5179 61.339L37.9464 57.7676L45 50.714L52.0536 57.7676L48.4821 61.339C47.8661 61.9551 47.6875 62.8748 48.0179 63.6783C48.3482 64.4819 49.1339 64.9998 50 64.9998H62.8571C64.0446 64.9998 65 64.0444 65 62.8569V49.9998C65 49.1337 64.4821 48.348 63.6786 48.0176C62.875 47.6873 61.9554 47.8658 61.3393 48.4819L57.7679 52.0533L50.7143 44.9998L57.7679 37.9462L61.3393 41.5176C61.9554 42.1337 62.875 42.3123 63.6786 41.9819C64.4821 41.6515 65 40.8658 65 39.9998V27.1426C65 25.9551 64.0446 24.9998 62.8571 24.9998H50C49.1339 24.9998 48.3482 25.5176 48.0179 26.3212C47.6875 27.1248 47.8661 28.0444 48.4821 28.6605L52.0536 32.2319L45 39.2855L37.9464 32.2319L41.5179 28.6605C42.1339 28.0444 42.3125 27.1248 41.9821 26.3212C41.6518 25.5176 40.8661 24.9998 40 24.9998Z"
                                 fill="white" />
                         </svg>
-                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Skalabilitas Tinggi</h3>
+                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Skalabilitas Tinggi
+                        </h3>
                         <ul class="text-gray-500 text-base list-disc list-inside">
                             <li>Platform ini dapat diakses kapan saja dan di mana saja!</li>
                             <li>Mendukung kebutuhan organisasi yang terus berkembang dan berubah.</li>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-center sm:items-start" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="flex flex-col items-center sm:items-start" data-aos="fade-up" data-aos-duration="800"
+                        data-aos-delay="300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none"
                             class="mb-4">
                             <rect y="-0.000244141" width="90" height="90" rx="15" fill="#24A3F2" />
@@ -273,7 +280,8 @@
                                 d="M44.5 19.9998C44.9517 19.9998 45.4034 20.0979 45.8158 20.2845L64.3056 28.1302C66.4659 29.0434 68.0762 31.1741 68.0664 33.7468C68.0173 43.4876 64.011 61.3097 47.0923 69.4106C45.4525 70.1961 43.5475 70.1961 41.9077 69.4106C24.989 61.3097 20.9827 43.4876 20.9336 33.7468C20.9238 31.1741 22.5342 29.0434 24.6944 28.1302L43.194 20.2845C43.5966 20.0979 44.0483 19.9998 44.5 19.9998ZM44.5 26.5591V63.6859C58.0507 57.1168 61.6937 42.594 61.782 33.8843L44.5 26.5591Z"
                                 fill="white" />
                         </svg>
-                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Jaminan Keamanan Data</h3>
+                        <h3 class="text-gray-900 font-bold text-xl mb-2 text-center sm:text-left">Jaminan Keamanan Data
+                        </h3>
                         <ul class="text-gray-500 text-base list-disc list-inside">
                             <li>eProcurement berbasis cloud menggunakan standar keamanan ISO 27001 untuk melindungi data
                                 pengadaan dan data vendor.</li>
@@ -283,7 +291,7 @@
                 </div>
             </div>
         </section>
-        <section class="feature py-24">
+        <section id="features" class="feature py-24">
             <div class="max-w-screen-2xl mx-auto px-4 relative">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-8 text-center">
                     Fitur Lengkap untuk Mendukung Pengadaan Modern
@@ -291,8 +299,8 @@
                 <div class="grid md:grid-cols-2 gap-10">
                     <div>
                         <div class="bg-[#48ACE1] rounded-2xl p-4 overflow-hidden">
-                            <img src="./lib/img/iproc cloud/fitur-1.png" data-aos="zoom-in-up" data-aos-duration="800" class="mx-auto relative -bottom-4 w-4/5"
-                                alt="Fitur Desktop 1">
+                            <img src="./lib/img/iproc cloud/fitur-1.png" data-aos="zoom-in-up" data-aos-duration="800"
+                                class="mx-auto relative -bottom-4 w-4/5" alt="Fitur Desktop 1">
                         </div>
                         <div class="mt-4">
                             <h3 class="text-base sm:text-2xl font-semibold text-gray-900">Vendor Registration &
@@ -305,8 +313,8 @@
                     </div>
                     <div>
                         <div class="bg-[#FFBC50] rounded-2xl p-4 overflow-hidden">
-                            <img src="./lib/img/iproc cloud/fitur-2.png" data-aos="zoom-in-up" data-aos-duration="800" class="mx-auto relative -bottom-4 w-4/5"
-                                alt="Fitur Desktop 1">
+                            <img src="./lib/img/iproc cloud/fitur-2.png" data-aos="zoom-in-up" data-aos-duration="800"
+                                class="mx-auto relative -bottom-4 w-4/5" alt="Fitur Desktop 1">
                         </div>
                         <div class="mt-4">
                             <h3 class="text-base sm:text-2xl font-semibold text-gray-900">Publikasi Pengumuman Lelang /
@@ -318,8 +326,8 @@
                     </div>
                     <div>
                         <div class="bg-[#FFBC50] rounded-2xl p-4 overflow-hidden">
-                            <img src="./lib/img/iproc cloud/fitur-3.png" data-aos="zoom-in-up" data-aos-duration="800" class="mx-auto relative -bottom-4 w-4/5"
-                                alt="Fitur Desktop 1">
+                            <img src="./lib/img/iproc cloud/fitur-3.png" data-aos="zoom-in-up" data-aos-duration="800"
+                                class="mx-auto relative -bottom-4 w-4/5" alt="Fitur Desktop 1">
                         </div>
                         <div class="mt-4">
                             <h3 class="text-base sm:text-2xl font-semibold text-gray-900">Market Survey/RFI</h3>
@@ -331,8 +339,8 @@
                     </div>
                     <div>
                         <div class="bg-[#48ACE1] rounded-2xl p-4 overflow-hidden">
-                            <img src="./lib/img/iproc cloud/fitur-4.png" data-aos="zoom-in-up" data-aos-duration="800" class="mx-auto relative -bottom-4 w-4/5"
-                                alt="Fitur Desktop 1">
+                            <img src="./lib/img/iproc cloud/fitur-4.png" data-aos="zoom-in-up" data-aos-duration="800"
+                                class="mx-auto relative -bottom-4 w-4/5" alt="Fitur Desktop 1">
                         </div>
                         <div class="mt-4">
                             <h3 class="text-base sm:text-2xl font-semibold text-gray-900">eBidding</h3>
@@ -345,7 +353,7 @@
                 </div>
             </div>
         </section>
-        <section class="hidden-iproc py-24">
+        <section id="perbandingan" class="hidden-iproc py-24">
             <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
                 <img src="./lib/img/Iproc cloud.svg" class="w-72 mb-12 mx-auto" alt="Logo iproc cloud">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-12 text-center sm:text-left">
@@ -609,13 +617,13 @@
                 </div>
             </div>
         </section>
-        <section class="bottom pt-20 px-4 relative overflow-hidden mb-20">
+        <section id="contact" class="bottom pt-20 px-4 relative overflow-hidden mb-20">
             <div class="max-w-screen-2xl mx-auto text-center p-15 rounded-4xl">
                 <p class="text-2xl sm:text-5xl! font-extrabold mx-auto text-white mb-8 max-w-2/3">
                     This is the future of e-Procurement. 
                     Are you ready to level up?
                 </p>
-                <a href="https://wa.me/08129402205">
+                <a href="http://wa.me/6281315870596">
                     <button
                         class="bg-white inline-flex gap-2 text-[#005bd5] hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center cursor-pointer mb-5">
                         <svg class="w-6 h-6 text-[#005db5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -642,14 +650,15 @@
                 <div class="col-span-6 md:col-span-4!">
                     <h3 class="text-base sm:text-lg font-bold mb-5">REACH US</h3>
                     <div class="flex gap-4 mb-5">
-                        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z"
                                 clip-rule="evenodd" />
                         </svg>
                         <span>
-                            District 8 – Treasury Tower. SCBD Lot 28,11th floor, Unit 11-K, Jl. Jend Sudirman Kav 52 – 54,
+                            District 8 – Treasury Tower. SCBD Lot 28,11th floor, Unit 11-K, Jl. Jend Sudirman Kav 52 –
+                            54,
                             Jakarta 12190, INDONESIA</span>
                     </div>
                     <p class="text-base sm:text-lg font-bold mb-5">Rani Eka</p>
@@ -671,7 +680,7 @@
                         </svg>
                         <a href="http://wa.me/6281315870596">+62 813‑1587‑0596</a>
                     </div>
-    
+
                 </div>
                 <div class="col-span-12 md:col-span-4!">
                     <iframe
@@ -682,10 +691,12 @@
             </div>
             <hr class="border-white my-10">
             <div class="flex flex-col sm:flex-row justify-between gap-4">
-                <span class="text-sm sm:text-base text-center sm:text-left!">Copyright © 2024 All rights reserved - IProc ADW ID | Terms &
+                <span class="text-sm sm:text-base text-center sm:text-left!">Copyright © 2024 All rights reserved -
+                    IProc ADW ID | Terms &
                     Conditions</span>
                 <div class="flex justify-center gap-4">
-                    <a href="https://www.youtube.com/@adwconsulting6136" class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                    <a href="https://www.youtube.com/@adwconsulting6136"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
                         <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -703,14 +714,16 @@
                             <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
                         </svg>
                     </a>
-                    <a href="https://x.com/adw_consulting" class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                    <a href="https://x.com/adw_consulting"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
                         <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
                         </svg>
                     </a>
-                    <a href="https://www.facebook.com/ADWConsulting/" class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
+                    <a href="https://www.facebook.com/ADWConsulting/"
+                        class="border-1 border-white p-2 rounded-full whitespace-nowrap w-[34px] h-[34px]">
                         <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
@@ -723,18 +736,10 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="lib/js/hidden.js"></script>
-    <script src="lib/js/navlink.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="lib/js/navbar.js"></script>
-    <script src="lib/js/testimonial.js"></script>
-    <script src="lib/js/slider.js"></script>
-    <script src="lib/js/sticky.js"></script>
-    <script src="lib/js/hamburger.js"></script>
-    <script src="lib/js/index.js"></script>
-    <script src="lib/js/event-schedule.js"></script>
     <script src="lib/js/flowbite.min.js"></script>
-    <script src="https://kit.fontawesome.com/790e7e3214.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

@@ -87,3 +87,7 @@ iframe {
     background-color: #005db5;
     background-position: bottom;
 }
+
+.nav-link.active{
+    color: #005db5 !important;
+}
