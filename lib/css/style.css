@@ -10,11 +10,15 @@ iframe {
 }
 
 .slide-iproc {
-    background-color: #005DB5;
+    background-image: url("../img/iproc-2-go/background-bottom.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #005db5;
+    background-position: bottom;
 }
 
 .prev,
-.next{
+.next {
     padding: 5px;
     width: 40px;
     height: 40px;
@@ -54,10 +58,11 @@ iframe {
 }
 
 .feature {
-    position: relative;
-    background: url("../img/pattern1.svg");
-    background-size: cover;
+    background-image: url("../img/iproc-2-go/background-bottom.png");
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-color: #005db5;
+    background-position: bottom;
 }
 
 .count-up {
@@ -69,9 +74,11 @@ iframe {
 }
 
 .testimonial {
-    background: url("../img/Pattern.svg");
+    background-image: url("../img/iproc-2-go/background-bottom.png");
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #005db5;
+    background-position: bottom;
 }
 
 .sector {
@@ -88,6 +95,6 @@ iframe {
     background-position: bottom;
 }
 
-.nav-link.active{
+.nav-link.active {
     color: #005db5 !important;
 }
