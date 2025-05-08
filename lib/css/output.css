@@ -2960,6 +2960,11 @@
       align-items: flex-start;
     }
   }
+  .sm\:gap-8 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:gap-8\! {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 8) !important;
