@@ -36,7 +36,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -151,12 +151,48 @@
                 </div>
                 <div class="iframe-wrapper relative -bottom-40 overflow-hidden md:w-[80%] mx-auto px-3 pt-3 md:px-6! md:pt-6! bg-linear-[180deg,#02498D,#015DB54D] rounded-t-4xl"
                     data-aos="fade-up" data-aos-duration="800">
-                    <iframe class="w-full rounded-t-3xl md:rounded-t-2xl"
+                    <!-- <iframe class="w-full rounded-t-3xl md:rounded-t-2xl"
                         src="https://www.youtube.com/embed/ugrnTcuBVZg?si=iYoGTDEeYlXL3tb3" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                    <div class="youtube-lazy w-full rounded-t-3xl md:rounded-t-2xl" data-youtube-id="ugrnTcuBVZg"
+                        style="position:relative; aspect-ratio:16/9; cursor:pointer; overflow:hidden;">
+                        <img src="https://img.youtube.com/vi/ugrnTcuBVZg/hqdefault.jpg" alt="YouTube Thumbnail"
+                            style="width:100%;height:100%;object-fit:cover;display:block;">
+                        <div
+                            style="position: absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
+                            <!-- Play icon, you can style this as needed -->
+                            <svg width="80" height="80" viewBox="0 0 68 48">
+                                <path
+                                    d="M66.52 7.44c-0.77-2.9-3.04-5.17-5.94-5.94C55.02 0 34 0 34 0S12.98 0 7.42 1.5c-2.9 0.77-5.17 3.04-5.94 5.94C0 12.98 0 24 0 24s0 11.02 1.5 16.56c0.77 2.9 3.04 5.17 5.94 5.94C12.98 48 34 48 34 48s21.02 0 26.58-1.5c2.9-0.77 5.17-3.04 5.94-5.94C68 35.02 68 24 68 24S68 12.98 66.52 7.44z"
+                                    fill="#f00" />
+                                <path d="M 45,24 27,14 27,34" fill="#fff" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
+
+                <script>
+                    document.querySelectorAll('.youtube-lazy').forEach(function (el) {
+                        el.addEventListener('click', function () {
+                            var videoId = el.getAttribute('data-youtube-id');
+                            var iframe = document.createElement('iframe');
+                            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+                            iframe.setAttribute('title', 'YouTube video player');
+                            iframe.setAttribute('frameborder', '0');
+                            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+                            iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+                            iframe.setAttribute('allowfullscreen', '');
+                            iframe.style.width = '100%';
+                            iframe.style.height = '100%';
+                            iframe.className = el.className; // maintain Tailwind classes if needed
+                            el.innerHTML = '';
+                            el.appendChild(iframe);
+                        });
+                    });
+
+                </script>
 
             </div>
         </section>
@@ -1794,7 +1830,7 @@
     <script src="lib/js/index.min.js"></script>
     <script src="lib/js/tabs.min.js"></script>
     <script src="lib/js/flowbite.min.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
