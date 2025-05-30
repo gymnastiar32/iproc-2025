@@ -29,14 +29,14 @@
     <title>iProc - Platform Procurement 4.0 Terintegrasi</title>
     <link rel="shortcut icon" href="lib/img/iproc-icon.png" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="lib/css/output.css" defermedia="screen">
+    <link rel="stylesheet" href="lib/css/output.min.css" defermedia="screen">
     <link rel="stylesheet" href="lib/css/flowbite.min.css">
-    <link rel="stylesheet" href="lib/css/style.css" defermedia="screen">
+    <link rel="stylesheet" href="lib/css/style.min.css" defermedia="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -355,7 +355,7 @@
                             <div>
                                 <p
                                     class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
-                                    <span class="num" data-val="210000">0000000</span>+
+                                    <span class="num" data-val="210000">0</span>+
                                 </p>
                                 <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Transaction /
                                     Year
@@ -685,12 +685,13 @@
                                 </ul>
                             </div>
 
-                            <a href="iproc-cloud.html" class="mt-6">
-                                <button
-                                    class="bg-[#005db5] text-sm sm:text-base! text-white px-6 py-2 rounded-lg hover:bg-[#02519B] cursor-pointer">
-                                    See More Information!
-                                </button>
-                            </a>
+                            <button
+                                class="bg-[#005db5] text-sm sm:text-base! text-white px-6 py-2 rounded-lg mt-6 opacity-70 inline-block"
+                                disabled>
+                                Coming Soon!
+                            </button>
+                            <!-- <a href="#" class="mt-6">
+                            </a> -->
                         </div>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -718,11 +719,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="iproc-2-go.html" class="mt-6">
-                                <button
-                                    class="bg-[#005db5] text-sm sm:text-base! text-white px-6 py-2 rounded-lg hover:bg-[#02519B] cursor-pointer">
-                                    See More Information!
-                                </button>
+                            <a href="iproc-2-go.html"
+                                class="bg-[#005db5] text-sm sm:text-base! text-white px-6 py-2 rounded-lg hover:bg-[#02519B] cursor-pointer inline-block">
+                                See More Information!
                             </a>
                         </div>
                     </div>
@@ -1790,13 +1789,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="lib/js/slider.js"></script>
-    <script src="lib/js/navbar.js"></script>
-    <script src="lib/js/index.js"></script>
-    <script src="lib/js/tabs.js"></script>
+    <script src="lib/js/slider.min.js"></script>
+    <script src="lib/js/navbar.min.js"></script>
+    <script src="lib/js/index.min.js"></script>
+    <script src="lib/js/tabs.min.js"></script>
     <script src="lib/js/flowbite.min.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
     <script>
         AOS.init();
