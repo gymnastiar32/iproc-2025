@@ -31,7 +31,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="lib/css/output.css" defermedia="screen">
     <link rel="stylesheet" href="lib/css/flowbite.min.css">
-    <link rel="stylesheet" href="lib/css/style.min.css" defermedia="screen">
+    <link rel="preload" href="lib/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -172,28 +172,6 @@
                         </div>
                     </div>
                 </div>
-
-                <script>
-                    document.querySelectorAll('.youtube-lazy').forEach(function (el) {
-                        el.addEventListener('click', function () {
-                            var videoId = el.getAttribute('data-youtube-id');
-                            var iframe = document.createElement('iframe');
-                            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
-                            iframe.setAttribute('title', 'YouTube video player');
-                            iframe.setAttribute('frameborder', '0');
-                            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-                            iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
-                            iframe.setAttribute('allowfullscreen', '');
-                            iframe.style.width = '100%';
-                            iframe.style.height = '100%';
-                            iframe.className = el.className; // maintain Tailwind classes if needed
-                            el.innerHTML = '';
-                            el.appendChild(iframe);
-                        });
-                    });
-
-                </script>
-
             </div>
         </section>
         <div class="py-20 bg-[#24A3F2]"></div>
