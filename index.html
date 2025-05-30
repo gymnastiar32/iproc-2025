@@ -29,10 +29,14 @@
     <title>iProc - Platform Procurement 4.0 Terintegrasi</title>
     <link rel="shortcut icon" href="lib/img/iproc-icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lib/css/output.css" defermedia="screen">
-    <link rel="stylesheet" href="lib/css/flowbite.min.css" defermedia="screen">
-    <link rel="stylesheet" href="lib/css/style.min.css" defermedia="screen">
+    <link rel="stylesheet" href="lib/css/output.css">
+    <link rel="stylesheet" href="lib/css/flowbite.min.css">
+    <link rel="stylesheet" href="lib/css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="preload" as="image" href="https://img.youtube.com/vi/ugrnTcuBVZg/hqdefault.jpg"
+        imagesrcset="https://img.youtube.com/vi/ugrnTcuBVZg/sddefault.jpg 640w, https://img.youtube.com/vi/ugrnTcuBVZg/hqdefault.jpg 1280w">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
@@ -158,8 +162,10 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                     <div class="youtube-lazy w-full rounded-t-3xl md:rounded-t-2xl" data-youtube-id="ugrnTcuBVZg"
                         style="position:relative; aspect-ratio:16/9; cursor:pointer; overflow:hidden;">
-                        <img src="https://img.youtube.com/vi/ugrnTcuBVZg/hqdefault.jpg" alt="YouTube Thumbnail"
-                            style="width:100%;height:100%;object-fit:cover;display:block;" width="1130" height="635">
+                        <img src="https://img.youtube.com/vi/ugrnTcuBVZg/hqdefault.jpg"
+                            srcset="https://img.youtube.com/vi/ugrnTcuBVZg/sddefault.jpg 640w, https://img.youtube.com/vi/ugrnTcuBVZg/hqdefault.jpg 1280w"
+                            sizes="(max-width: 767px) 100vw, 800px" alt="YouTube Thumbnail" width="1280" height="720"
+                            style="width:100%;height:100%;object-fit:cover;display:block;">
                         <div
                             style="position: absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;">
                             <!-- Play icon, you can style this as needed -->
@@ -1869,10 +1875,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="lib/js/slider.min.js"></script>
-    <script src="lib/js/navbar.min.js"></script>
-    <script src="lib/js/index.min.js"></script>
-    <script src="lib/js/tabs.min.js"></script>
+    <script src="lib/js/slider.min.js" defer></script>
+    <script src="lib/js/navbar.min.js" defer></script>
+    <script src="lib/js/index.min.js" defer></script>
+    <script src="lib/js/tabs.min.js" defer></script>
     <script src="lib/js/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
