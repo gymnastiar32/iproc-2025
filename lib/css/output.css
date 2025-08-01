@@ -1388,6 +1388,12 @@
   .-mr-1 {
     margin-right: calc(var(--spacing) * -1);
   }
+  .-mr-3 {
+    margin-right: calc(var(--spacing) * -3);
+  }
+  .-mr-4 {
+    margin-right: calc(var(--spacing) * -4);
+  }
   .-mr-6 {
     margin-right: calc(var(--spacing) * -6);
   }
@@ -1500,6 +1506,12 @@
     .dark .apexcharts-canvas &:before {
       border-bottom-color: var(--color-gray-700) !important;
     }
+  }
+  .-ml-3 {
+    margin-left: calc(var(--spacing) * -3);
+  }
+  .-ml-4 {
+    margin-left: calc(var(--spacing) * -4);
   }
   .-ml-6 {
     margin-left: calc(var(--spacing) * -6);
