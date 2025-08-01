@@ -988,6 +988,9 @@
   .order-3 {
     order: 3;
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .col-span-6 {
     grid-column: span 6 / span 6;
   }
@@ -1002,6 +1005,9 @@
   }
   .col-start-4 {
     grid-column-start: 4;
+  }
+  .col-start-5 {
+    grid-column-start: 5;
   }
   .col-end-10 {
     grid-column-end: 10;
@@ -2806,6 +2812,9 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -3377,6 +3386,16 @@
       grid-column: span 6 / span 6 !important;
     }
   }
+  .sm\:col-start-4 {
+    @media (width >= 40rem) {
+      grid-column-start: 4;
+    }
+  }
+  .sm\:col-start-5 {
+    @media (width >= 40rem) {
+      grid-column-start: 5;
+    }
+  }
   .sm\:mx-0 {
     @media (width >= 40rem) {
       margin-inline: calc(var(--spacing) * 0);
@@ -3646,6 +3665,11 @@
       grid-column: span 4 / span 4 !important;
     }
   }
+  .md\:col-span-6 {
+    @media (width >= 48rem) {
+      grid-column: span 6 / span 6;
+    }
+  }
   .md\:col-start-3\! {
     @media (width >= 48rem) {
       grid-column-start: 3 !important;
@@ -3800,6 +3824,11 @@
       padding-inline: calc(var(--spacing) * 12);
     }
   }
+  .md\:px-14 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 14);
+    }
+  }
   .md\:px-14\! {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 14) !important;
@@ -3883,6 +3912,11 @@
       order: 2;
     }
   }
+  .lg\:col-span-4 {
+    @media (width >= 64rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
   .lg\:col-span-4\! {
     @media (width >= 64rem) {
       grid-column: span 4 / span 4 !important;
@@ -3906,6 +3940,11 @@
   .lg\:col-start-7\! {
     @media (width >= 64rem) {
       grid-column-start: 7 !important;
+    }
+  }
+  .lg\:col-start-9 {
+    @media (width >= 64rem) {
+      grid-column-start: 9;
     }
   }
   .lg\:col-end-7\! {
@@ -3986,6 +4025,11 @@
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-12 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
   .lg\:flex-row {
