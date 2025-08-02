@@ -901,6 +901,9 @@
   .-bottom-4 {
     bottom: calc(var(--spacing) * -4);
   }
+  .-bottom-5 {
+    bottom: calc(var(--spacing) * -5);
+  }
   .-bottom-10 {
     bottom: calc(var(--spacing) * -10);
   }
@@ -1066,6 +1069,9 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .my-12 {
+    margin-block: calc(var(--spacing) * 12);
+  }
   .my-auto {
     margin-block: auto;
   }
@@ -1083,6 +1089,9 @@
   }
   .-mt-20 {
     margin-top: calc(var(--spacing) * -20);
+  }
+  .-mt-24 {
+    margin-top: calc(var(--spacing) * -24);
   }
   .-mt-40 {
     margin-top: calc(var(--spacing) * -40);
@@ -2013,10 +2022,28 @@
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .scale-2 {
+    --tw-scale-x: 2%;
+    --tw-scale-y: 2%;
+    --tw-scale-z: 2%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-20 {
+    --tw-scale-x: 20%;
+    --tw-scale-y: 20%;
+    --tw-scale-z: 20%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
   .scale-150 {
     --tw-scale-x: 150%;
     --tw-scale-y: 150%;
     --tw-scale-z: 150%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-200 {
+    --tw-scale-x: 200%;
+    --tw-scale-y: 200%;
+    --tw-scale-z: 200%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-\[\.9\] {
@@ -2830,8 +2857,14 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
@@ -2847,6 +2880,9 @@
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
   }
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
@@ -3346,6 +3382,11 @@
       outline-style: none;
     }
   }
+  .sm\:-bottom-5 {
+    @media (width >= 40rem) {
+      bottom: calc(var(--spacing) * -5);
+    }
+  }
   .sm\:-bottom-15 {
     @media (width >= 40rem) {
       bottom: calc(var(--spacing) * -15);
@@ -3399,6 +3440,11 @@
   .sm\:mx-0 {
     @media (width >= 40rem) {
       margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:my-24 {
+    @media (width >= 40rem) {
+      margin-block: calc(var(--spacing) * 24);
     }
   }
   .sm\:-mt-40 {
@@ -3476,12 +3522,27 @@
       min-width: calc(1/2 * 100%);
     }
   }
+  .sm\:min-w-6\/12 {
+    @media (width >= 40rem) {
+      min-width: calc(6/12 * 100%);
+    }
+  }
+  .sm\:min-w-8\/12 {
+    @media (width >= 40rem) {
+      min-width: calc(8/12 * 100%);
+    }
+  }
   .sm\:scale-150 {
     @media (width >= 40rem) {
       --tw-scale-x: 150%;
       --tw-scale-y: 150%;
       --tw-scale-z: 150%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .sm\:grid-cols-12\! {
@@ -3537,6 +3598,21 @@
   .sm\:px-14\! {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 14) !important;
+    }
+  }
+  .sm\:py-5 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:py-20 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:py-24 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 24);
     }
   }
   .sm\:pt-22 {
@@ -3638,6 +3714,11 @@
   .md\:right-8\! {
     @media (width >= 48rem) {
       right: calc(var(--spacing) * 8) !important;
+    }
+  }
+  .md\:-bottom-5 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * -5);
     }
   }
   .md\:bottom-0 {
@@ -3837,6 +3918,16 @@
   .md\:px-15\! {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 15) !important;
+    }
+  }
+  .md\:py-5 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:py-20 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .md\:pt-6\! {
