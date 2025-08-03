@@ -8,12 +8,12 @@
 .illustration::after {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 40%;
     background-color: rgba(0, 0, 0, 0.2);
     top: 97%;
-    z-index: 10;
-    left: 42%;
+    z-index: 999;
+    left: 44%;
     transform: skewX(45deg);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 20px;
@@ -40,4 +40,11 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+}
+
+@media screen and (max-width:639px) {
+    .illustration::after{
+        width: 27%;
+        left: 46%;
+    }
 }

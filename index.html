@@ -30,7 +30,7 @@
     <link rel="canonical" href="https://iproc.id/" />
     <link rel="shortcut icon" href="lib/img/iproc-icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="lib/css/output.min.css"> -->
+    <!-- <link rel="stylesheet" href="lib/css/output.css"> -->
     <!-- <link rel="stylesheet" href="lib/css/flowbite.min.css" media="print" onload="this.media='all'"> -->
     <!-- <link rel="stylesheet" href="lib/css/style.min.css"> -->
     <!-- <link rel="stylesheet" href="lib/css/hero.min.css"> -->
@@ -208,18 +208,18 @@
     </nav>
 
     <main>
-        <section class="hero pt-22" id="home">
-            <div class="max-w-screen-2xl mx-auto px-8 md:px-0">
-                <div class="relative -bottom-20">
-                    <h1 class="mb-3 text-3xl text-center sm:text-6xl! font-extrabold text-gray-900">
+        <section class="hero pt-22 h-dvh" id="home">
+            <div class="max-w-screen-2xl relative h-full flex flex-col justify-end mx-auto px-8 sm:px-14">
+                <div class="relative flex-grow flex flex-col items-center justify-center">
+                    <h1 class="mb-3 text-5xl sm:text-6xl! text-center font-extrabold text-gray-900">
                         Integrated Procurement Platform
                     </h1>
-                    <p class="text-gray-600 text-center md:max-w-1/2 text-base sm:text-xl mx-auto">
+                    <p class="text-gray-600 text-center md:max-w-1/2 text-lg sm:text-xl mx-auto">
                         An innovative and reliable eProcurement solution designed to help enhance efficiency at every
                         stage of your procurement process.
                 </div>
                 <div
-                    class="iframe-wrapper relative -bottom-40 overflow-hidden md:w-[80%] mx-auto px-3 pt-3 md:px-6! md:pt-6! bg-linear-[180deg,#02498D,#015DB54D] rounded-t-4xl">
+                    class="iframe-wrapper relative overflow-hidden w-full md:w-10/12! lg:w-[60%]! mx-auto px-3 pt-3 md:px-6! md:pt-6! bg-linear-[180deg,#02498D,#015DB54D] rounded-t-4xl mb-40 lg:mb-0">
                     <!-- <iframe class="w-full rounded-t-3xl md:rounded-t-2xl"
                         src="https://www.youtube.com/embed/ugrnTcuBVZg?si=iYoGTDEeYlXL3tb3" title="YouTube video player"
                         frameborder="0"
@@ -245,10 +245,10 @@
                 </div>
             </div>
         </section>
-        <div class="py-20 bg-[#24A3F2]"></div>
-        <section id="about-us" class="feature bg-gray-50 py-22">
-            <div class="w-full max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="w-auto px-8 lg:px-0">
+        <div class="py-20 -mt-40 bg-[#24A3F2]"></div>
+        <section id="about-us" class="feature bg-gray-50 py-12 sm:py-22!">
+            <div class="w-full max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 px-8 lg:px-14">
+                <div class="w-auto">
                     <h2 class="text-2xl sm:text-4xl! font-extrabold text-white mb-6">What is iProc?</h2>
                     <p class="text-sm sm:text-xl text-white mb-4">
                         iProc is an Indonesian-made eProcurement platform designed to help companies comprehensively
@@ -274,15 +274,15 @@
 
             </div>
         </section>
-        <section class="count-up py-22">
-            <div class="w-full max-w-screen-2xl mx-auto px-8 sm:px-0">
+        <section class="count-up py-12 sm:py-22!">
+            <div class="w-full max-w-screen-2xl mx-auto px-8 sm:px-14!">
                 <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 text-center">Effortless solutions,
                     impactful
                     outcomes</h2>
                 <div class="mt-16 w-full mx-auto grid grid-cols-12 gap-4 sm:gap-8!">
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-6 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                                     fill="none">
@@ -293,16 +293,16 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num text-gray-900" data-val="16">00</span>%+
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Cost Saving</p>
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">Cost Saving</p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
                                     fill="none">
@@ -313,17 +313,17 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num text-gray-900" data-val="35">00</span>%+
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Time Reduction
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">Time Reduction
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
                                     fill="none">
@@ -334,18 +334,18 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num " data-val="3760">0000</span> <span
                                         class="text-sm sm:text-base">Billion+</span>
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Saving Value /
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">Saving Value /
                                     Year</p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                                     fill="none">
@@ -356,18 +356,18 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num " data-val="12300">00000</span> <span
                                         class="text-sm sm:text-base">Billion+</span>
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!"> PO Values/Year
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!"> PO Values/Year
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
                                     fill="none">
@@ -378,16 +378,16 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num" data-val="8000">0000</span>+
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Users</p>
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">Users</p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
                                     fill="none">
@@ -398,17 +398,17 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num" data-val="50000">000000</span> +
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Eligible Vendors
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">Eligible Vendors
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                                     fill="none">
@@ -419,16 +419,16 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num" data-val="53000">000000</span>+
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">PO / Year </p>
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">PO / Year </p>
                             </div>
                         </div>
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
                                     fill="none">
@@ -439,10 +439,10 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num" data-val="210000">0</span>+
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!">Transaction /
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!">Transaction /
                                     Year
                                 </p>
                             </div>
@@ -450,7 +450,7 @@
                     </div>
                     <div
                         class="col-span-6 sm:col-span-4! flex flex-col justify-center p-5 bg-white rounded-lg overflow-hidden shadow transition hover:scale-105">
-                        <div class="flex flex-col md:flex-row gap-4 items-center">
+                        <div class="flex flex-col lg:flex-row gap-4 items-center">
                             <div class="p-4 bg-[#48ACE133] rounded-lg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"
                                     fill="none">
@@ -461,10 +461,10 @@
                             </div>
                             <div>
                                 <p
-                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center md:text-left!">
+                                    class="mb-1 text-xl sm:text-3xl! font-extrabold text-gray-900 text-wrap text-center lg:text-left!">
                                     <span class="num" data-val="2000">0000</span>+
                                 </p>
-                                <p class="text-sm sm:text-lg! text-gray-500 text-center md:text-left!"> Procurement
+                                <p class="text-sm sm:text-lg! text-gray-500 text-center lg:text-left!"> Procurement
                                     Points </p>
                             </div>
                         </div>
@@ -472,12 +472,12 @@
                 </div>
             </div>
         </section>
-        <section id="features" class="feature2 py-22">
-            <div class="w-full max-w-screen-2xl mx-auto flex flex-col items-center px-8 sm:px-0">
+        <section id="features" class="feature2 py-12 sm:py-22!">
+            <div class="w-full max-w-screen-2xl mx-auto flex flex-col items-center px-8 sm:px-14">
                 <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mb-20 text-center">
                     Value-Added Solutions from iProc
                 </h2>
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8!">
+                <div class="grid grid-cols-1 md:grid-cols-2! lg:grid-cols-3! gap-4 sm:gap-8!">
                     <div class="text-left transition hover:scale-105">
                         <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
                             <rect width="90" height="90" rx="15" fill="#24A3F2" />
@@ -594,8 +594,8 @@
                 </div>
             </div>
         </section>
-        <section id="technology" class="w-full py-22">
-            <div class="max-w-screen-2xl mx-auto px-8 sm:px-0">
+        <section id="technology" class="w-full py-12 sm:py-22!">
+            <div class="max-w-screen-2xl mx-auto px-8 sm:px-14!">
                 <h2 class="text-2xl sm:text-4xl! font-extrabold text-gray-900 mb-8 text-center">Our Key Capabilities
                 </h2>
                 <div class="flex flex-wrap justify-center gap-4 px-4 md:gap-6">
@@ -741,7 +741,7 @@
                 </div>
             </div>
         </section>
-        <section class="procurement w-full flex py-22">
+        <section class="procurement w-full flex py-12 sm:py-22!">
             <div class="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
                 <div class="flex mb-8 gap-4">
                     <p class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-10">
@@ -749,14 +749,14 @@
                         Leading the Way into <br> with
                         Intelligent Automation.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 px-8 sm:px-0 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 px-8 sm:px-14! gap-8">
                     <img loading="lazy" src="lib/img/Picture11.svg" alt="Image 1" class="img-pro mx-auto w-full">
                     <img loading="lazy" src="lib/img/Picture12.svg" alt="Image 2" class="img-pro mx-auto w-full ">
                 </div>
             </div>
         </section>
-        <section class="iproc-feature-2 py-22">
-            <div class="max-w-screen-2xl mx-auto px-8 sm:px-0 text-center">
+        <section class="iproc-feature-2 py-12 sm:py-22!">
+            <div class="max-w-screen-2xl mx-auto px-8 sm:px-14! text-center">
                 <div class="flex flex-col gap-14">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="bg-[#48ACE1] rounded-2xl p-4 overflow-hidden flex items-end relative">
@@ -814,7 +814,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="iproc-2-go.html"
+                            <a href="/iproc-2go/"
                                 class="bg-[#005db5] text-sm sm:text-base! text-white px-6 py-2 rounded-lg hover:bg-[#02519B] cursor-pointer inline-block">
                                 See More Information!
                             </a>
@@ -823,8 +823,8 @@
                 </div>
             </div>
         </section>
-        <section id="customer-story" class="testimonial py-22">
-            <div class="max-w-screen-2xl mx-auto px-8 sm:px-0">
+        <section id="customer-story" class="testimonial py-12 sm:py-22!">
+            <div class="max-w-screen-2xl mx-auto px-8 sm:px-14!">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-white text-center">Proven Track Record</h2>
                 <p class="text-sm sm:text-base! text-center text-gray-200 my-6">Hear it From Our Clients</p>
                 <div class="grid grid-cols-12 mx-auto gap-4 sm:gap-8">
@@ -895,8 +895,8 @@
                 </div>
             </div>
         </section>
-        <section class="sector py-22">
-            <div class="max-w-screen-2xl mx-auto px-8 sm:px-0">
+        <section class="sector py-12 sm:py-22!">
+            <div class="max-w-screen-2xl mx-auto px-8 sm:px-14!">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900">Industries We Serve
                     </h2>
@@ -1072,7 +1072,7 @@
                 </div>
             </div>
         </section>
-        <section class="slide-iproc py-22">
+        <section class="slide-iproc py-12 sm:py-22!">
             <div class="w-full max-w-screen-2xl mx-auto relative">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-white text-center mb-4">Our Clients</h2>
                 <div id="controls" class="flex justify-center items-center w-full mb-12">
@@ -1737,8 +1737,8 @@
                 class="client-toggle bg-white px-5 py-2.5 text-[#005db5] mx-auto text-center block mt-5 rounded-lg cursor-pointer hover:bg-gray-100 md:hidden">Show
                 More</button>
         </section>
-        <section id="blog" class="award py-22 bg-linear-[180deg,#EEF7FF,#EEF7FF00]">
-            <div class="max-w-screen-2xl mx-auto px-8 sm:px-0">
+        <section id="blog" class="award py-12 sm:py-22! bg-linear-[180deg,#EEF7FF,#EEF7FF00]">
+            <div class="max-w-screen-2xl mx-auto px-8 sm:px-14!">
                 <p class="text-2xl sm:text-4xl! font-bold text-gray-900 text-center mb-8">Award</p>
                 <p class="text-sm sm:text-base! text-gray-600 text-center mb-8">
                     iProc is a procurement platform that streamlines sourcing, <br>
