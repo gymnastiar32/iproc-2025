@@ -30,7 +30,7 @@
     <link rel="shortcut icon" href="../lib/img/iproc-2-go/iproc-2-go.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
     <link rel="stylesheet" href="../lib/css/flowbite.min.css" />
-    <link rel="stylesheet" href="../lib/css/output.min.css" />
+    <link rel="stylesheet" href="../lib/css/output.css" />
     <link rel="stylesheet" href="../lib/css/style.min.css">
     <link rel="stylesheet" href="../lib/css/iproc-2-go.css" defermedia="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
@@ -80,14 +80,14 @@
     data-gr-ext-installed="" cz-shortcut-listen="true">
 
     <nav id="navbar" class="px-8 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-2xl w-full">
-            <div class="p-2 mr-5">
+        <div class="flex justify-end lg:justify-around items-center mx-auto max-w-screen-2xl w-full">
+            <!-- <div class="p-2 mr-5 order-1">
                 <a href="index.html" class="">
                     <img loading="lazy" src="../lib/img/Iproc.png" alt="iProc" width="90" height="33">
                 </a>
-            </div>
+            </div> -->
 
-            <div class="flex items-center space-x-4 lg:space-x-6 lg:order-2">
+            <div class="flex items-center space-x-4 lg:space-x-6 mb-auto order-2">
                 <!-- Language Dropdown with Flags -->
                 <!-- <div class="relative inline-block text-left">
                     <button data-dropdown-toggle="languageDropdown"
@@ -126,7 +126,7 @@
 
                 <a class="button-nav" href="http://wa.me/6281315870596">
                     <button type="button"
-                        class=" hidden bg-primary md:block text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer">Contact
+                        class=" hidden bg-primary lg:block text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer">Contact
                         Us</button>
                     <span class="sr-only">Contact Us Button</span>
                 </a>
@@ -144,7 +144,7 @@
                 </button>
             </div>
 
-            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="menu">
+            <div class="hidden flex-grow justify-between items-center w-full lg:flex lg:w-auto order-1 -mt-4 lg:-mt-0" id="menu">
                 <ul class="navbar-nav nav flex flex-col mt-4 font-medium lg:flex-row lg:space-x-2 lg:mt-0">
                     <li class="nav-item">
                         <a href="#home"

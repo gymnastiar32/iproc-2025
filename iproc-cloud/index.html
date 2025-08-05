@@ -31,7 +31,7 @@
     <link rel="shortcut icon" href="../lib/img/Iproc cloud.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
     <link rel="stylesheet" href="../lib/css/flowbite.min.css" />
-    <link rel="stylesheet" href="../lib/css/output.min.css" />
+    <link rel="stylesheet" href="../lib/css/output.css" />
     <link rel="stylesheet" href="../lib/css/style.min.css">
     <link rel="stylesheet" href="../lib/css/iproc-cloud.min.css" defermedia="screen" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
@@ -78,8 +78,8 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="0" data-new-gr-c-s-check-loaded="14.1211.0"
     data-gr-ext-installed="" cz-shortcut-listen="true">
     <nav id="navbar" class="px-8 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
-        <div class="flex flex-wrap justify-end lg:justify-around items-center mx-auto max-w-screen-2xl w-full">
-            <div class="flex items-center space-x-4 lg:space-x-6 lg:order-2 ml-0 lg:ml-4!">
+        <div class="flex justify-end lg:justify-around items-center mx-auto max-w-screen-2xl w-full">
+            <div class="flex items-center space-x-4 lg:space-x-6 order-2 mb-auto ml-0 lg:ml-4!">
                 <!-- Language Dropdown with Flags -->
                 <!-- <div class="relative inline-block text-left">
                     <button data-dropdown-toggle="languageDropdown"
@@ -116,9 +116,9 @@
                     </div>
                 </div> -->
 
-                <a class="button-nav" href="http://wa.me/6281315870596">
+                <a class="button-nav hidden xl:block" href="http://wa.me/6281315870596">
                     <button type="button"
-                        class=" hidden bg-primary md:block text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer hover:bg-[#02519b]">Hubungi
+                        class="bg-primary text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer hover:bg-[#02519b]">Hubungi
                         Kami</button>
                     <span class="sr-only">Hubungi Kami Button</span>
                 </a>
@@ -135,35 +135,44 @@
                     </svg>
                 </button>
             </div>
-            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="menu">
+            <div class="hidden flex-grow justify-between items-center w-full lg:flex lg:w-auto order-1 -mt-4 lg:-mt-0"
+                id="menu">
                 <ul class="navbar-nav nav flex flex-col mt-4 font-medium lg:flex-row lg:space-x-2 lg:mt-0">
                     <li class="nav-item">
                         <a href="#home"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded active">iProc
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-2 xl:px-3 rounded active">iProc
                             Cloud: <span class="font-bold">Plug & Play eProcurement</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#problem"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Masalah</a>
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-2 xl:px-3 rounded">Masalah</a>
                     </li>
                     <li class="nav-item">
                         <a href="#solution"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Solusi</a>
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-2 xl:px-3 rounded">Solusi</a>
                     </li>
                     <li class="nav-item">
                         <a href="#features"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Fitur
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-2 xl:px-3 rounded">Fitur
                             Unggulan</a>
                     </li>
                     <li class="nav-item">
                         <a href="#perbandingan"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Nilai
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-2 xl:px-3 rounded">Nilai
                             Investasi</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact"
-                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-3 rounded">Informasi
+                            class="nav-link text-base block text-gray-900 hover:bg-blue-100 w-full py-1.5 px-2 xl:px-3 rounded">Informasi
                             Implementasi</a>
+                    </li>
+                    <li>
+                        <a class="button-nav-mini ml-1.5 my-2 hidden" href="http://wa.me/6281315870596">
+                            <button type="button"
+                                class=" bg-primary text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer hover:bg-[#02519b]">Hubungi
+                                Kami</button>
+                            <span class="sr-only">Hubungi Kami Button</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -171,7 +180,7 @@
     </nav>
     <main>
         <section id="home" class="hero pt-12 sm:pt-22 min-h-dvh flex flex-col">
-            <div class="max-w-screen-2xl flex-grow flex flex-col justify-between mx-auto px-8 md:px-14!">
+            <div class="max-w-screen-2xl flex-grow flex flex-col justify-between mx-auto px-8 lg:px-10! xl:px-14!">
                 <div class="relative flex-grow flex flex-col justify-center">
                     <img class="mb-8 mx-auto w-56 sm:w-92!" src="../lib/img/Iproc cloud.svg" alt="iProc Cloud Logo" />
                     <h1 class="mb-3 text-4xl text-center sm:text-6xl! font-extrabold text-gray-900">
@@ -184,7 +193,7 @@
                         level with a flexible, secure, and cost-effective cloud-based system. -->
                     </p>
                 </div>
-                <div class="cloud-content flex-grow -mx-8 overflow-x-clip overflow-y-visible">
+                <div class="cloud-content flex-grow -mx-8 lg:-mx-10 overflow-x-clip overflow-y-visible">
                     <img src="../lib/img/iproc cloud/hero-illustrationx2.webp" alt="Cloud System Illustration"
                         class="w-full mx-auto" data-aos="zoom-in-down" data-aos-duration="800" />
                 </div>
@@ -192,15 +201,15 @@
         </section>
         <div class="py-12 sm:py-20 -mt-24 sm:-mt-40 bg-[#24A3F2]"></div>
         <section id="problem" class="solve py-12 sm:py-24">
-            <div class="max-w-screen-2xl mx-auto px-8 md:px-14! text-center">
+            <div class="max-w-screen-2xl mx-auto px-8 lg:px-10! xl:px-14! text-center">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-8">
                     Organisasi Anda sudah mengimplementasikan <br />
                     e-Procurement, namun...
                     <!-- Your organization has already adopted <br> e-Procurement, but... -->
                 </h2>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-y-0 -mr-4 -ml-4 md:-mr-12 md:-ml-12">
-                    <div class="flex flex-col items-center px-4 md:px-12 border-r-0 border-sky-200 lg:border-r-2"
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 lg:gap-y-0 -mr-8 -ml-8 lg:-mr-10 lg:-ml-10">
+                    <div class="flex flex-col items-center px-8 lg:px-10 border-r-0 border-sky-200 lg:border-r-2"
                         data-aos="fade-up" data-aos-duration="800">
                         <img loading="lazy" src="../lib/img/iproc cloud/problem-1.svg" class="mb-4 w-8/12 sm:w-12/12"
                             alt="Biaya Besar" />
@@ -210,7 +219,7 @@
                             <!-- Still requires significant costs for infrastructure and system maintenance? -->
                         </p>
                     </div>
-                    <div class="flex flex-col items-center px-4 md:px-12 border-r-0 border-sky-200 lg:border-r-2"
+                    <div class="flex flex-col items-center px-8 lg:px-10 border-r-0 border-sky-200 lg:border-r-2"
                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                         <img loading="lazy" src="../lib/img/iproc cloud/problem-2.svg" class="mb-4 w-8/12 sm:w-12/12"
                             alt="Implementasi Rumit" />
@@ -219,7 +228,7 @@
                             <!-- Is the system implementation complicated and time-consuming? -->
                         </p>
                     </div>
-                    <div class="flex flex-col items-center px-4 md:px-12 border-r-0 border-sky-200 lg:border-r-2"
+                    <div class="flex flex-col items-center px-8 lg:px-10 border-r-0 border-sky-200 lg:border-r-2"
                         data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <img loading="lazy" src="../lib/img/iproc cloud/problem-3.svg" class="mb-4 w-8/12 sm:w-12/12"
                             alt="Akses Terbatas" />
@@ -230,7 +239,7 @@
                             different locations? -->
                         </p>
                     </div>
-                    <div class="flex flex-col items-center px-4 md:px-12" data-aos="fade-up" data-aos-duration="800"
+                    <div class="flex flex-col items-center px-8 lg:px-10" data-aos="fade-up" data-aos-duration="800"
                         data-aos-delay="300">
                         <img loading="lazy" src="../lib/img/iproc cloud/problem-4.svg" class="mb-4 w-8/12 sm:w-12/12"
                             alt="Implementasi Lama" />
@@ -244,7 +253,7 @@
         </section>
         <section id="solution" class="desk pt-12 md:py-5 relative overflow-hidden">
             <div
-                class="max-w-screen-2xl mx-auto flex flex-col items-center md:flex-row px-8 md:px-14! gap-10 md:gap-14!">
+                class="max-w-screen-2xl mx-auto flex flex-col items-center md:flex-row px-8 lg:px-10! xl:px-14! gap-10 md:gap-14!">
                 <div class="content-desk md:py-20 ">
                     <h2 class="text-2xl sm:text-4xl! font-bold text-white">
                         Beralih ke iProc Cloud Solusinya!
@@ -284,7 +293,7 @@
             </div>
         </section>
         <section class="why-iproc py-12 sm:py-20">
-            <div class="max-w-screen-2xl mx-auto px-8 md:px-14!">
+            <div class="max-w-screen-2xl mx-auto px-8 lg:px-10! xl:px-14!">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-center text-gray-900 mb-14">
                     Mengapa iProc
                     Cloud?
@@ -402,7 +411,7 @@
             </div>
         </section>
         <section id="features" class="feature py-12 sm:py-24">
-            <div class="max-w-screen-2xl mx-auto px-8 md:px-14! relative">
+            <div class="max-w-screen-2xl mx-auto px-8 lg:px-10! xl:px-14! relative">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-14 text-center">
                     Fitur Lengkap untuk Mendukung Pengadaan Modern
                 </h2>
@@ -522,7 +531,7 @@
             </div>
         </section>
         <section id="perbandingan" class="hidden-iproc py-12 sm:py-24">
-            <div class="max-w-screen-2xl mx-auto px-8 md:px-14!">
+            <div class="max-w-screen-2xl mx-auto px-8 lg:px-10! xl:px-14!">
                 <img loading="lazy" src="../lib/img/Iproc cloud.svg" class="w-48 sm:w-72 mb-12 mx-auto"
                     alt="Logo iproc cloud">
                 <h2 class="text-2xl sm:text-4xl! font-bold text-gray-900 mb-12 text-center">
@@ -1230,7 +1239,7 @@
                         class="w-full" alt="Certified Registered">
                 </div>
                 <div class="col-span-12 sm:col-span-6 lg:col-span-4!">
-                    <h3 class="text-base sm:text-lg font-bold mb-5">REACH U</h3>
+                    <h3 class="text-base sm:text-lg font-bold mb-5">REACH US</h3>
                     <div class="flex gap-4 mb-5">
                         <svg class="w-6 h-6 text-white shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor" viewBox="0 0 24 24">
@@ -1243,7 +1252,7 @@
                             54,
                             Jakarta 12190, INDONESIA</a>
                     </div>
-                    <p class="text-base sm:text-lg font-bold mb-5">Rani Eka</p>
+                    <p class="text-base sm:text-lg font-bold mb-5">iProc Cloud Support</p>
                     <div class="flex gap-4 mb-5">
                         <svg class="w-6 h-6 text-white shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor" viewBox="0 0 24 24">
@@ -1252,17 +1261,8 @@
                             <path
                                 d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
                         </svg>
-                        <a href="mailto:rani@adw.co.id">rani@adw.co.id</a>
+                        <a href="mailto:support.cloud@pengadaan.com">support.cloud@pengadaan.com</a>
                     </div>
-                    <div class="flex gap-4 mb-5">
-                        <svg class="w-6 h-6 text-white shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M7.978 4a2.553 2.553 0 0 0-1.926.877C4.233 6.7 3.699 8.751 4.153 10.814c.44 1.995 1.778 3.893 3.456 5.572 1.68 1.679 3.577 3.018 5.57 3.459 2.062.456 4.115-.073 5.94-1.885a2.556 2.556 0 0 0 .001-3.861l-1.21-1.21a2.689 2.689 0 0 0-3.802 0l-.617.618a.806.806 0 0 1-1.14 0l-1.854-1.855a.807.807 0 0 1 0-1.14l.618-.62a2.692 2.692 0 0 0 0-3.803l-1.21-1.211A2.555 2.555 0 0 0 7.978 4Z" />
-                        </svg>
-                        <a href="http://wa.me/6281315870596">+62 813‑1587‑0596</a>
-                    </div>
-
                 </div>
                 <div class="col-span-12 lg:col-span-4!">
                     <iframe
