@@ -1337,6 +1337,9 @@
   .-mr-8 {
     margin-right: calc(var(--spacing) * -8);
   }
+  .-mr-10 {
+    margin-right: calc(var(--spacing) * -10);
+  }
   .-mr-\[2px\] {
     margin-right: calc(2px * -1);
   }
@@ -1452,6 +1455,9 @@
   }
   .-ml-8 {
     margin-left: calc(var(--spacing) * -8);
+  }
+  .-ml-10 {
+    margin-left: calc(var(--spacing) * -10);
   }
   .-ml-\[2px\] {
     margin-left: calc(2px * -1);
@@ -3707,6 +3713,11 @@
       max-width: 480px;
     }
   }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .lg\:grid-cols-3\! {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -3845,6 +3856,26 @@
       max-width: 580px;
     }
   }
+  .xl\:grid-cols-4 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .xl\:gap-8\! {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 8) !important;
+    }
+  }
+  .xl\:gap-10\! {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 10) !important;
+    }
+  }
+  .xl\:p-2\.5 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 2.5);
+    }
+  }
   .xl\:px-3 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 3);
@@ -3853,6 +3884,30 @@
   .xl\:px-14\! {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 14) !important;
+    }
+  }
+  .xl\:text-2xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .xl\:text-4xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .xl\:text-base {
+    @media (width >= 80rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .xl\:text-xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .rtl\:rotate-180 {
