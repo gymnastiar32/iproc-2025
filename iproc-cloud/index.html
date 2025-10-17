@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Solusi fleksibel, aman, dan hemat biaya untuk transformasi pengadaan Anda – tanpa infrastruktur
                         tambahan." />
     <meta name="author" content="iproc.adw.co.id" />
@@ -82,7 +83,7 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0" data-new-gr-c-s-check-loaded="14.1211.0"
     data-gr-ext-installed="" cz-shortcut-listen="true">
-    <nav id="navbar" class="px-8 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-50 bg-transparent">
+    <nav id="navbar" class="px-8 p-6 lg:px-6 py-2.5 fixed top-0 left-0 w-full z-10 bg-transparent">
         <div class="flex justify-end lg:justify-around items-center mx-auto max-w-screen-2xl w-full">
             <div class="flex items-center space-x-4 lg:space-x-6 order-2 mb-auto ml-0 lg:ml-4!">
                 <!-- Language Dropdown with Flags -->
@@ -122,8 +123,8 @@
                 </div> -->
 
                 <a class="button-nav hidden xl:block" href="mailto:support.cloud@pengadaan.com">
-                    <button type="button"
-                        class="bg-primary text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer hover:bg-[#02519b]">Hubungi
+                    <button type="button" data-button-id="cta-1" data-button-text="Hubungi Kami Top"
+                        class="ga-track-contact bg-primary text-white hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-8 py-2 text-center cursor-pointer hover:bg-[#02519b]">Hubungi
                         Kami</button>
                     <span class="sr-only">Hubungi Kami Button</span>
                 </a>
@@ -1400,7 +1401,8 @@
                     Konsultasikan kebutuhan perusahaan Anda dengan mengisi form di bawah ini. <br> Tim iProc Cloud akan
                     segera menghubungi Anda
                 </h2>
-                <form action="https://formsubmit.co/gymnastiar32@gmail.com" method="POST" accept-charset="UTF-8">
+                <form class="ga-track-form" id="lead-form" name="Lead Form"
+                    action="https://formsubmit.co/rani@adw.co.id" method="POST" accept-charset="UTF-8">
                     <!-- CONFIG FormSubmit -->
                     <input type="hidden" name="_subject" value="Lead Baru dari Situs iProc/adw" />
                     <input type="hidden" name="_template" value="table" />
@@ -1533,11 +1535,11 @@
                                 pihak ketiga untuk keperluan pemasaran/komersial. Informasi Anda hanya digunakan untuk
                                 komunikasi terkait layanan kami.
                                 Anda dapat mencabut persetujuan kapan saja melalui
-                                <a href="mailto:support@pengadaan.com"
-                                    class="underline text-blue-700">support@pengadaan.com</a>.
+                                <a href="mailto:support.cloud@pengadaan.com"
+                                    class="underline text-blue-700">support.cloud@pengadaan.com</a>.
                             </small>
 
-                            <button type="submit"
+                            <button type="submit" data-button-id="cta-2" data-button-text="Kirim"
                                 class="text-white bg-[#005db5] hover:bg-[#02519b] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 hover:cursor-pointer">
                                 Kirim
                             </button>
@@ -1655,8 +1657,8 @@
                     Tinggalkan Sistem Lama, Beralih ke iProc Cloud Sekarang!
                 </p>
                 <a href="mailto:support.cloud@pengadaan.com">
-                    <button
-                        class="bg-white inline-flex gap-2 text-[#005bd5] hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center cursor-pointer hover:bg-gray-100">
+                    <button data-button-id="cta-3" data-button-text="Hubungi Kami Bottom"
+                        class="ga-track-contact bg-white inline-flex gap-2 text-[#005bd5] hover:shadow-inner focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 text-center cursor-pointer hover:bg-gray-100">
                         <svg class="w-6 h-6 text-[#005db5]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path
@@ -1670,6 +1672,21 @@
                 </a>
             </div>
         </section>
+        <div id="popup-overlay" class="fixed inset-0 z-30 hidden bg-black/50 opacity-0 transition-opacity duration-300"
+            aria-hidden="true"></div>
+        <div id="popup-banner" role="dialog" aria-modal="true" aria-labelledby="popup-title"
+            class="fixed inset-x-0 top-1/2 -translate-y-1/2 z-40 mx-auto hidden w-[92%] max-w-3xl rounded-xl border border-gray-200 bg-white shadow-xl opacity-0 scale-95 transition-all duration-300">
+            <div class="relative p-5">
+                <div class="flex-1">
+                    <img src="../lib/img/Flyer Discount iProc Cloud Landscape.jpg" class="ml-auto" alt="Banner iProc Cloud">
+                </div>
+                <button id="popup-close"
+                    class="absolute -top-8 right-0 px-1.5 shrink-0 rounded-md text-red-500 bg-gray-100/50 hover:cursor-pointer hover:bg-gray-100 hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-gray-200/50"
+                    aria-label="Tutup popup">
+                    ✕
+                </button>
+            </div>
+        </div>
     </main>
     <footer class="px-4 md:px-14 pt-20 pb-10 bg-[#005db5] text-white">
         <div class="max-w-screen-2xl mx-auto p-2">
@@ -1847,6 +1864,106 @@
 
             openBtn.addEventListener('click', openModal);
             closeEls.forEach(el => el.addEventListener('click', closeModal));
+        })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NFEC7PRVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2NFEC7PRVV');
+    </script>
+
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const el = e.target.closest('.ga-track-contact');
+            if (!el) return;
+            gtag('event', 'contact_btn_click', {
+                button_id: el.dataset.buttonId,
+                button_text: el.dataset.buttonText
+            });
+        });
+
+        document.addEventListener('submit', function (e) {
+            const f = e.target.closest('form.ga-track-form');
+            if (!f || typeof gtag !== 'function') return;
+
+            // Cegah submit dulu biar event terkirim
+            if (f.dataset.gaSubmitted === '1') return;
+            e.preventDefault();
+
+            const params = {
+                form_id: f.dataset.formId || f.id || 'lead-form',
+                form_name: f.dataset.formName || f.getAttribute('name') || 'Lead Form',
+                page_path: location.pathname
+            };
+
+            // Kirim event lalu lanjut submit setelah terkirim/timeout
+            gtag('event', 'form_submit', {
+                ...params,
+                event_callback: function () {
+                    f.dataset.gaSubmitted = '1';
+                    f.submit();
+                },
+                event_timeout: 2000
+            });
+        });
+    </script>
+
+    <script>
+        (function () {
+            const STORAGE_KEY = 'popupBannerSeen'; // ganti ke sessionStorage bila ingin sekali per sesi
+            const overlay = document.getElementById('popup-overlay');
+            const popup = document.getElementById('popup-banner');
+            const closeBtn = document.getElementById('popup-close');
+
+            // --- util show/hide dengan animasi ---
+            function showPopup() {
+                overlay.classList.remove('hidden');
+                popup.classList.remove('hidden');
+                // trigger transition
+                requestAnimationFrame(() => {
+                    overlay.classList.remove('opacity-0');
+                    popup.classList.remove('opacity-0', 'scale-95');
+                });
+                // kirim fokus ke tombol close (aksesibilitas)
+                setTimeout(() => closeBtn.focus(), 50);
+            }
+
+            function hidePopup() {
+                overlay.classList.add('opacity-0');
+                popup.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                    popup.classList.add('hidden');
+                }, 250);
+            }
+
+            // --- tampilkan hanya sekali (kunjungan pertama) ---
+            const alreadySeen = localStorage.getItem(STORAGE_KEY) === '1';
+            // NOTE: kalau ingin "sekali per sesi browser", gunakan:
+            // const alreadySeen = sessionStorage.getItem(STORAGE_KEY) === '1';
+
+            if (alreadySeen) {
+                // Tampilkan setelah load (bisa diberi delay kecil jika mau)
+                showPopup();
+                // tandai sudah pernah tampil
+                localStorage.setItem(STORAGE_KEY, '1');
+                // sessionStorage.setItem(STORAGE_KEY, '1'); // versi per sesi
+            }
+
+            // --- interaksi: close via tombol, overlay, dan ESC ---
+            closeBtn.addEventListener('click', hidePopup);
+            overlay.addEventListener('click', hidePopup);
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') hidePopup();
+            });
+
+            // (opsional) helper untuk testing: ketik `resetPopup()` di console
+            window.resetPopup = () => localStorage.removeItem(STORAGE_KEY);
         })();
     </script>
 
