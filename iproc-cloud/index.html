@@ -1920,6 +1920,10 @@
             const popup = document.getElementById('popup-banner');
             const closeBtn = document.getElementById('popup-close');
 
+            console.log(overlay);
+            console.log(popup);
+            console.log(closeBtn);
+
             // --- util show/hide dengan animasi ---
             function showPopup() {
                 overlay.classList.remove('hidden');
@@ -1931,6 +1935,7 @@
                 });
                 // kirim fokus ke tombol close (aksesibilitas)
                 setTimeout(() => closeBtn.focus(), 50);
+                console.log("Pop Up Show")
             }
 
             function hidePopup() {
@@ -1940,6 +1945,8 @@
                     overlay.classList.add('hidden');
                     popup.classList.add('hidden');
                 }, 250);
+
+                console.log("Pop Up Hide")
             }
 
             // --- tampilkan hanya sekali (kunjungan pertama) ---
